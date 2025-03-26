@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gyuu.</title>
+    <link rel="icon" type="image/x-icon" href="/!s/img/home/blank.png">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/!f/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/!s/tooltip.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preload" as="image" href="/!s/!img/home/postcard.png">
+    <link rel="preload" as="image" href="/!s/!img/home/map2.png">
+    <link rel="preload" as="image" href="/!s/!img/home/tryal2.jpg">
+</head>
+
+<body>
+    <div class="wrap">
+        <aside class="dclw">
+        <img src="/!s/!img/index/dcl.png" class="dcl">
+        </aside>
+        <br>
+        <h1>before you board</h1>
+        best viewed on desktop using firefox.<br>
+        optimised for <u title="images are compressed but nothing more, slow loading times may be apparent. this site is for myself!" style="cursor:default">nothing*</u>.
+        <br><br>
+        this site contains javascript and optional music.
+        <br>
+        <button onclick="toggleAutoplay()" title="turning on music is recommended for the full experience, as it's just ambient background music." style="cursor:pointer">press to toggle music autoplay, off by default.</button>
+        <br><br>
+        all persons should be 16 or over before boarding.
+        <br><br>
+        <img src="/!s/!img/index/pirate.webp" style="width:40%;"> <br>
+        <img src="/!s/!img/index/sea.webp" style="width:40%;">
+        <br><br>
+        <aside class="potcw">
+            <img src="/!s/!img/index/potc.png" class="potc">
+        </aside>
+    </div>
+    <div class="hang">
+        <a href="home"><h2>set sail?</h2></a>
+    </div>
+</body>
+<svg>
+    <defs>
+        <clipPath id="ragged-image-border" stroke="none" fill="none" clipPathUnits="objectBoundingBox"><path d="M0.004,0.006 L0.034,0 L0.104,0.008 L0.235,0.005 H0.33 L0.363,0.01 L0.368,0.006 L0.437,0.001 L0.501,0.006 C0.501,0.006,0.572,0.006,0.642,0.006 C0.712,0.006,0.872,0.011,0.872,0.011 L0.928,0.008 L0.931,0.007 L0.982,0.007 L0.995,0.005 L0.999,0.006 L0.999,0.024 V0.062 L0.997,0.244 L0.991,0.249 L0.996,0.262 L0.999,0.521 L0.996,0.539 L0.998,0.61 L1,0.618 L1,0.886 L0.998,0.959 L1,0.969 L0.999,0.992 L0.99,0.996 L0.924,0.988 L0.875,0.999 L0.774,0.99 L0.766,1 L0.553,0.992 L0.523,0.998 L0.47,0.987 L0.439,0.993 L0.347,0.993 L0.264,0.999 L0.254,0.995 L0.225,1 L0.133,0.994 L0.131,0.995 L0.037,0.991 L0.004,0.992 L0.003,0.98 L0.008,0.966 L0.001,0.908 C0.001,0.908,0.004,0.833,0.004,0.802 C0.004,0.771,0.001,0.759,0,0.718 C-0.001,0.678,0.008,0.539,0.008,0.539 L0.002,0.494 L0.005,0.487 L0.004,0.269 L0.008,0.262 L0.004,0.197 V0.071 L0.005,0.023 L0.004,0.006"></path></clipPath>
+    </defs>
+</svg>
+<script>
+        function toggleAutoplay() {
+            let autoplay = localStorage.getItem("autoplay") === "true";
+            localStorage.setItem("autoplay", !autoplay);
+            alert("music is now turned " + (!autoplay ? "ON" : "OFF") + " for all pages.");
+        }
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="/!s/jquery.style-my-tooltips.js"></script>
+</html>
