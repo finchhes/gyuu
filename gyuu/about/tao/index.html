@@ -7,17 +7,125 @@
 	<title>gyuu.</title>
 	<link rel="icon" type="image/x-icon" href="../!s/!img/home/blank.png" />
 	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="../!f/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="../!s/tooltip.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/!f/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/!s/tooltip.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 
 <body>
-	<div class="wrap">
-		
+	<audio src="49.mp3" autoplay="" loop id="mus1"></audio>
+	<video src="/!s/!img/about/tao/bg.mp4" autoplay muted id="videoElement" class="bg"></video>
+	<script>
+		const video = document.getElementById('videoElement');
+
+		video.addEventListener('timeupdate', () => {
+			//
+			if (video.currentTime >= video.duration - 0.1) {
+				requestAnimationFrame(() => {
+					video.currentTime = video.duration - .9;
+					video.play();
+				});
+			}
+		});
+
+		video.addEventListener('ended', () => {
+			requestAnimationFrame(() => {
+				video.currentTime = video.duration - .9;
+				video.play();
+			});
+		});
+	</script>
+	<img src="/!s/!img/about/tao/load.gif" class="load">
+	<img src="/!s/!img/about/tao/load2.gif" class="load2">
+	<p id="load">i can do anything i want...</p>
+	<div class="frame" style="display: none;">
+		<img src="/!s/!img/about/tao/frame.gif" class="framegif">
+		<img src="/!s/!img/about/tao/glitchd.gif" class="glitch">
+		<video src="/!s/!img/about/tao/pound.mp4" class="pound"></video>
 	</div>
+	<p id="you">and so can you.</p>
+
+	<div id="timproc">
+		<p id="timer"></p>
+		<p id="proceed">.proceed .</p>
+	</div>
+
+	<video src="/!s/!img/about/tao/bg2.mp4" muted class="bg2"></video>
+	<video src="/!s/!img/about/tao/bg3.mp4" autoplay muted loop id="videoElement" class="bg3"></video>
+	<audio id="pound" src="115.mp3"></audio>
+	<audio id="weewao" src="148.mp3"></audio>
+	<audio id="mus2" src="189.mp3" loop></audio>
+	<audio id="attention" src="192.mp3"></audio>
+
+	<div id="main">
+		hey, my name is tao or will.
+		<br>&nbsp;&nbsp; welcome to whatever this is.
+		<br><br><br>
+		&nbsp;i'm the primary webmaster of this site. even the parts<br> for miles are usually primarily coded by yours
+		truly.
+		<br><br><br>
+		this site is pretty obviously inspired by the donnie darko arg/website. big shout out to <a
+			href="https://donniedarkowebsite.com">donniedarkowebsite.com</a>, a really cool project that brought it back
+		to life. all assets ive used here are sourced from there, with some mild tweaking because this is in html and
+		not flash. i refuse to try to edit a corporate flash site from 2001.
+		<br><br>
+		&nbsp;the code for this page is very scuffed, but i'm happy with it.
+		<br><br><br><br><br>
+		<div style="display:flex;margin:auto;gap:20px;height:310px;">
+			<details>
+				<summary>loves</summary>
+				-----------------------------------
+				<br>
+				- my wife x
+				<br>
+				- my cats, zig and zag
+				<br>
+				- film and photography
+				<br>
+				- my friends and family
+				<br><br>
+				- web design
+				<br>
+				- snoopy / the peanuts
+				<br>
+				- seals and servals
+				<br>
+				- firearms and weaponry
+			</details>
+			<details>
+				<summary>typology</summary>
+				-----------------------------------
+				<br>
+				- ISTJ 6w7 628 sx/sp
+				<br>
+				- lawful neutral
+				<br>
+				- idk you tell me
+				<br><br>
+				- astral charts are complicated
+			</details>
+			<details>
+				<summary>march in film</summary>
+				-----------------------------------
+				<br>
+				favourite releases
+				<br>
+				- mickey 17: 75
+				<br>
+				- black bag: <a href="https://letterboxd.com/yotes/film/black-bag-2025/">81</a>
+			</details>
+			<details>
+				<summary>misc</summary>
+				-----------------------------------
+				<br>
+				- fun fact: this page was started and finished in one night! very little compared to <a href="../miles">miles'</a> which took around 8 days.
+			</details>
+		</div>
+
+		<a href="../">&nbsp;&nbsp;&nbsp;back to the primary universe?</a>
+
+	</div>
+
 </body>
+<script src="script.js"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="../!s/jquery.style-my-tooltips.js"></script>
-
-</html> 
+</html>

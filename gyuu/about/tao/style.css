@@ -1,9 +1,177 @@
 html {
-	background: url(https://i0.wp.com/dogwonder.co.uk/wp-content/uploads/2023/11/menu.jpg);
-	background-size: 1500px;
-    image-rendering: pixelated;
-    background-position: 100% bottom;
-    background-position-x:center;
-     background-attachment: fixed;
-	color: blue;
+    background: white;
+    color: black;
+    padding: 0px;
+    overflow: hidden;
+    width: 1400px;
 }
+
+body {
+    padding:0px;
+    margin:0px;
+}
+
+
+a {
+    color:red;
+    text-decoration: none;
+}
+
+.bg {
+    width:1420px;
+    object-fit: cover;
+    position:absolute;
+    right:0px;
+    z-index:-1;
+    pointer-events: none;
+}
+
+.bg2, .bg3 {
+    width:1460px;
+    object-fit: cover;
+    position:absolute;
+    right:-28px;
+    z-index:0;
+    opacity:0;
+    pointer-events: none;
+    transition: 2s;
+}
+
+.bg3 {
+    position:absolute;
+    opacity:1;
+    z-index:-2;
+}
+
+#main {
+    position:relative;
+    z-index:3000;
+    font-family:arial;
+    font-size:15px;
+    font-weight: bolder;
+    padding:200px;
+    width:800px;
+    margin:auto;
+    display:none;
+}
+
+.bg2.visible {
+    opacity: 1;
+  }
+
+  .bg2.hidden {
+    display:none
+    pointer-events: none;
+}
+
+.frame {
+    display: block;
+    padding: 0px;
+    height: min-content;
+    width: min-content;
+    position: absolute;
+    top: 250px;
+    right:670px;
+    transform: scale(1.4);
+}
+
+.frame img, .frame video {
+    position:absolute;
+    pointer-events: none;
+}
+
+.framegif {
+    z-index:3;
+}
+
+.glitch, .pound {
+    z-index:2;
+    top:24px;
+    left:6px;
+    width:205px;
+}
+
+.pound {
+    z-index:1;
+}
+
+.load, .load2 {
+    position: absolute;
+    
+    right: 570px;
+    top: 470px;
+    z-index: 4;
+    transform: scale(1.4);
+}
+
+.load2 {
+    display:none;
+    cursor:pointer;
+}
+
+#load {
+    position:absolute;
+    top:485px;
+    right:410px;
+    z-index:5;
+    font-family:arial;
+    font-size:13px;
+    pointer-events: none !important;
+    display:none;
+    color:#b2b2b2;
+    text-shadow: -1px 1px black;
+}
+
+#you {
+    position:absolute;
+    font-family:arial;
+    font-size:14px;
+    pointer-events: none !important;
+    color:black;
+    top:400px;
+    right:400px;
+    z-index:-1;
+    display:none;
+}
+
+.load2:hover + #load {
+    display:block;
+}
+
+#timer, #proceed {
+    position:absolute;
+    font-family:arial;
+    font-size:15px;
+    font-weight: bolder;
+    pointer-events: none !important;
+    top:480px;
+    right:180px;
+}
+
+#proceed {
+    right:200px;
+    top:510px;
+    color:red;
+    display:none;
+    pointer-events: all !important;
+    cursor:pointer;
+}
+
+  #timproc {
+    transition: opacity 1s ease-out;
+  }
+
+  #timproc.hidden {
+    opacity: 0; 
+    pointer-events: none;
+  }
+
+  details {
+    width:33%;
+    line-height: 1.8
+  }
+
+  summary {
+    cursor: pointer;
+    user-select: none;
+  }
