@@ -1,5 +1,5 @@
 html {
-    background: url(../!s/!img/about/bg.jpg) center / 30%;
+    background: url(/!s/!img/about/bg.jpg) center / 30%;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    background: url(../!s/!img/about/wanted.jpg) center / cover;
+    background: url(/!s/!img/about/wanted.jpg) center / cover;
     text-align: center;
     padding:40px;
     height:650px;

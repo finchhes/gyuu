@@ -1,4 +1,9 @@
 html {
-	background-color: black;
+	background: url(https://i0.wp.com/dogwonder.co.uk/wp-content/uploads/2023/11/menu.jpg);
+	background-size: 1500px;
+    image-rendering: pixelated;
+    background-position: 100% bottom;
+    background-position-x:center;
+     background-attachment: fixed;
 	color: blue;
 }

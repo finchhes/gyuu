@@ -6,7 +6,7 @@
 html {
     position:relative;
     background-color:#F4F0D2;
-    background-image:url(../!s/!img/home/bg.png);
+    background-image:url(/!s/!img/home/bg.png);
     background-size: 1500px;
     image-rendering: pixelated;
     background-position: 100% bottom;
@@ -113,7 +113,7 @@ main {
     margin-left:auto;
     margin-right:auto;
     color: #85582d;
-    background-image:url(../!s/!img/home/postcard.png);
+    background-image:url(/!s/!img/home/postcard.png);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -181,7 +181,7 @@ main .mainside {
 nav {
     grid-area: map;
     padding:6px;
-    background-image:url(../!s/!img/home/map.png);
+    background-image:url(/!s/!img/home/map.png);
     background-size: 85%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -201,7 +201,7 @@ nav:hover {
     filter: drop-shadow(0px 0px 6px #3e1005e1);
     transform:rotate(0.2deg);
     transition: 0.3s;
-    background-image:url(../!s/!img/home/map2.png);
+    background-image:url(/!s/!img/home/map2.png);
 }
 
 .navtitle {
@@ -268,7 +268,7 @@ nav .navbody a {
     position:relative;
     border:solid 2px #85582d;
     padding:6px !important;
-    background-image:url(../!s/!img/home/lined.jpg);
+    background-image:url(/!s/!img/home/lined.jpg);
     background-size: 180%;
     background-position: top;
     color: #451902;
@@ -335,7 +335,7 @@ nav .navbody a {
 .todo {
     grid-area: todo;
     padding:6px;
-    background-image:url(../!s/!img/home/notebook.png);
+    background-image:url(/!s/!img/home/notebook.png);
     background-size:contain;
     background-repeat: no-repeat;
     transform:rotate(3deg);
@@ -438,7 +438,7 @@ nav .navbody a {
 
 .poster {
     grid-area:poster;
-    background: url(../!s/!img/home/tryal.jpg) center / cover no-repeat;
+    background: url(/!s/!img/home/tryal.jpg) center / cover no-repeat;
     transform:rotate(-3deg);
     border-radius:4px;
     padding:8px;
@@ -454,7 +454,7 @@ nav .navbody a {
 }
 
 .poster:hover {
-    background: url(../!s/!img/home/tryal2.jpg) center / cover no-repeat;
+    background: url(/!s/!img/home/tryal2.jpg) center / cover no-repeat;
     transform:rotate(-1deg);
     filter: drop-shadow(0px 0px 6px #3e1005e1);
 }
@@ -518,7 +518,7 @@ nav .navbody a {
     height:87px;
     outline:solid 2px #F1F0D3;
     border: ridge 3px#85582d;
-    background:url(../!s/!img/home/compass.png) center / cover;
+    background:url(/!s/!img/home/compass.png) center / cover;
     filter: drop-shadow(0px 0px 3px #3e10059a);
     border-radius:.5px;
     transform:rotate(.6deg);
@@ -568,7 +568,7 @@ nav .navbody a {
     height:100%;
     overflow:scroll;
     text-align: center;
-    background: url(../!s/!img/home/paper.jpg) center / 100%;
+    background: url(/!s/!img/home/paper.jpg) center / 100%;
     background-size: 180%;
     background-position: top;
     background-attachment: local;
@@ -668,7 +668,7 @@ nav .navbody a {
     height:78%;
     z-index:0;
     padding:14px;
-    background:url(../!s/!img/home/wood.jpg) 20%;
+    background:url(/!s/!img/home/wood.jpg) 20%;
     letter-spacing: 1px;
     font-size:16px;
     filter:drop-shadow(0px 0px 3px #3e10059a);
@@ -763,7 +763,7 @@ footer a {
     }
 
     nav {
-        background-image:url(../!s/!img/home/map2.png);
+        background-image:url(/!s/!img/home/map2.png);
         width:200px;
     }
 
@@ -808,7 +808,7 @@ footer a {
     }
 
     .poster {
-        background: url(../!s/!img/home/tryal2.jpg) 40% center / cover no-repeat;
+        background: url(/!s/!img/home/tryal2.jpg) 40% center / cover no-repeat;
         width:80%;
         transform: rotate(-3deg) scale(.8);
         margin:auto;
