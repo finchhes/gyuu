@@ -1,7 +1,7 @@
 
 
 html {
-    background:url(/!s/!img/index/bg.png);
+    background:url(!s/!img/index/bg.png);
     background-size: 1550px;
     image-rendering: pixelated;
     background-position-x:center;
@@ -17,7 +17,7 @@ html {
     padding:21px;
     font-family: manu;
     font-size: 15px;
-    background: url(/!s/!img/index/board.png) center / 100% no-repeat;
+    background: url(!s/!img/index/board.png) center / 100% no-repeat;
     color:#faf7df;
     image-rendering:initial;
     position: relative;
@@ -100,7 +100,7 @@ a:hover h2 {
 
 .hang {
     box-sizing: border-box;
-    background:url(/!s/!img/index/hanging.png) center / contain no-repeat;
+    background:url(!s/!img/index/hanging.png) center / contain no-repeat;
     height:250px;
     max-width:500px;
     margin:auto;
@@ -122,7 +122,7 @@ button {
     font-family:manu;
     background-color:#4c3c32;
     border:ridge 2px #5D381E;
-    background-image: url(/!s/!img/index/board.png);
+    background-image: url(!s/!img/index/board.png);
     background-position: center;
     background-size: 120%;
     background-blend-mode:soft-light;
