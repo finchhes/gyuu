@@ -291,10 +291,15 @@
 let audioElement;
 let backgroundAudio = document.getElementById("bg-music");
 
-
-document.addEventListener("visibilitychange", function() {
-        document.hidden ? document.getElementById("bg-music").pause() : document.getElementById("bg-music").play()
-      })
+    document.addEventListener("visibilitychange", function () {
+            if (document.hidden) {
+                backgroundAudio.pause();
+            } else if (autoplay) {
+                backgroundAudio.play().catch(() => {
+                    console.log("Autoplay was blocked by the browser. User interaction is required.");
+                });
+            }
+        });
     
 
 function fadeOutAudio(audio, callback) {
