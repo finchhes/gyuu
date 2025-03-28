@@ -12,6 +12,7 @@
     <link rel="preload" fetchpriority="high" as="image" href="/!s/!img/home/postcard.png">
     <link rel="preload" as="image" href="/!s/!img/home/map2.png">
     <link rel="preload" as="image" href="/!s/!img/home/tryal2.jpg">
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
 </head>
 
 <body>
@@ -60,17 +61,24 @@
             <div class="pca">
                 <div class="jack">
                     <div class="imgh"></div>
-                    <img src="/!s/!img/home/jack.png">
+                    <img src="/!s/!img/home/jack.png" id="jack">
                     <p style="margin-bottom:20px;">yo, ho! yo, ho! <br>a pirate's life for me!</p>
                     <p>
-                        shrines
+                        other ships
                     </p>
-                    <div class="jbg" title="just ideas right now">
-                        <p>
-                            <span>disney</span>
-                            <span>fictional piracy</span>
-                            <span>old web</span>
-                        </p>
+                    <div class="jbg">
+                        <div class="jbgi">
+                            <a href="https://crotovane.neocities.org/" target="_blank"><img src="/!s/!img/home/buttons/cro.png"></a>
+                            <a href="https://necrowmancy.info/" target="_blank"><img src="/!s/!img/home/buttons/necro.png"></a>
+                            <a href="https://princss.online/" target="_blank"><img src="/!s/!img/home/buttons/princess.png"></a>
+                            <a href="https://roboticoperatingbuddy.neocities.org" target="_blank"><img src="/!s/!img/home/buttons/robo.jpg"></a>
+                            <div><a href="https://sanji.neocities.org/" target="_blank"><img class="freezeframe" src="/!s/!img/home/buttons/toby.gif"></a></div>
+                            <div><a href="https://traversetown.neocities.org/" target="_blank"><img class="freezeframe" src="/!s/!img/home/buttons/traverse.gif" width="88"></a></div>
+                            <div><a href="https://mazapandust.com" target="_blank"><img class="freezeframe" src="/!s/!img/home/buttons/mazapan.gif"></a></div>
+                            <script>
+                                new Freezeframe();
+                                </script>
+                        </div>
                     </div>
                 </div>
                 <div class="contart">
@@ -85,18 +93,8 @@
                     <del>e</del>mail me <a href="mailto:gyuu4@proton.me" title="gyuu4@proton.me">here</a> directly.
                     <br><br>
                     <img src="/!s/!img/home/button.png" title="site button, put it on your site if youd like!">
-                    <br><br>
-                        <aside class="listings">
-                            <a href="https://shadow-lord.com/pirates/join.php"><img src="/!s/!img/home/fanlist/pirates.png"></a>
-                            <a href="https://silent.am/donniedarko/index.php"><img src="/!s/!img/home/fanlist/dd.png"></a>
-                            <a href="https://boundless-realms.com/disneyland/index.php"><img src="/!s/!img/home/fanlist/dl.jpg"></a>
-                            <a href="http://icehockeyfans.sportsontheweb.net/index.php"><img src="/!s/!img/home/fanlist/hockey.png"></a>
-                            <a href="http://inspirationally.net/captain+commodore/"><img src="/!s/!img/home/fanlist/jj.gif"></a> 
-                            <a href="https://naiad.nu/fam/"><img src="/!s/!img/home/fanlist/mf.jpg"></a>
-                            <a href="http://gryffindors.com/lindy/clockwork"><img src="/!s/!img/home/fanlist/tco.png"></a>
-                            <a href="https://fan.surlybutterfly.net/stardewvalley/"><img src="/!s/!img/home/fanlist/sdv.png"></a>
-                        </aside>
-                        <img src="/!s/!img/home/gifs/chest.gif" style="width:40%;"
+                    <br>
+                        <img src="/!s/!img/home/gifs/chest.gif" style="width:40%;margin-top:10px;"
                         title="keep your filthy hands off my treasure!">
                     </div>
                 </div>
@@ -411,5 +409,4 @@ function stopSound() {
     }
     filterContainers('all');
 </script>
-
 </html>

@@ -261,16 +261,16 @@ nav .navbody a {
     width:100%;
     z-index:10;
     margin-bottom:-40px;
-    top:-8px;
+    top:-3px;
 }
 
 .journal {
     position:relative;
     border:solid 2px #85582d;
     padding:6px !important;
-    background-image:url(/!s/!img/home/lined.jpg);
-    background-size: 180%;
-    background-position: top;
+    background-image:linear-gradient(#cbac801e .11em, transparent .11em);
+    background-color: #EEECCB;
+    background-size: 100% 1.4em;
     color: #451902;
     border-radius: 8px;
     height:100%;
@@ -281,7 +281,6 @@ nav .navbody a {
 }
 
 .journal .journalscroll {
-    filter: drop-shadow(0px 0 4px #EEECCBba) drop-shadow(-0px 0 4px #EEECCBba) drop-shadow(0 -0px 4px #EEECCBba) drop-shadow(0 0px 4px #eeeccbba);
     overflow:scroll;
     height:100%;
 }
@@ -561,7 +560,7 @@ nav .navbody a {
     font-family:lazy;
     font-size:20px;
     padding:10px;
-    padding-top:8px;
+    padding-top:20px;
     padding-bottom:8px;
     border:solid 2px #875A2E;
     border-radius:6px;
@@ -643,7 +642,7 @@ nav .navbody a {
     margin:0;
 }
 
-.jack img {
+.jack #jack {
     position:absolute;
     z-index:4;
     transition:.3s;
@@ -656,6 +655,7 @@ nav .navbody a {
 }
 
 .jack img:hover {
+    filter:none;
     transform:scale(1.05);
 }
 
@@ -668,26 +668,53 @@ nav .navbody a {
     height:78%;
     z-index:0;
     padding:14px;
+    padding-bottom:3px;
     background:url(/!s/!img/home/wood.jpg) 20%;
     letter-spacing: 1px;
     font-size:16px;
     filter:drop-shadow(0px 0px 3px #3e10059a);
 }
 
-.jack .jbg > p {
+.jack .jbg a {
+    text-decoration: none;
+    border:none;
+    filter:drop-shadow(0 0 2px #3b1604);
+}
+
+.jack .jbg .jbgi img {
+    filter:brightness(.9)sepia(.6) hue-rotate(-18deg) saturate(1.7);
+    transition: filter .5s, transform .3s;
+    opacity:1;
+    height:31px;
+    width:88px;
+}
+
+.jack .jbg img:hover {
+    filter: none;
+    opactity:1;
+}
+
+.jbgi {
+    width:88px;
+    display:block;
+    float:right;
+    margin-right:-10px;
     display:flex;
     flex-direction: column;
-    gap:10px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    height:100%;
+    padding-top:5px;
 }
 
-.jack .jbg span {
-    display:block;
-    pointer-events: none;
+.jbgi div {
+    margin-bottom:3px;
+    filter:brightness(.9)sepia(.6) hue-rotate(-18deg) saturate(1.7);
+    transition: filter .5s, transform .3s, opacity: .0s;
 }
 
-.jack .jbg > p {
-    text-align: center;
-    width:40%;
+.jbgi div:hover {
+    filter:none;
 }
 
 footer {
