@@ -692,6 +692,7 @@ nav .navbody a {
 .jack .jbg img:hover {
     filter: none;
     opactity:1;
+    transform: scale(1) translatey(-2px);
 }
 
 .jbgi {
