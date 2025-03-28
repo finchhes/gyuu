@@ -682,7 +682,7 @@ nav .navbody a {
 }
 
 .jack .jbg .jbgi img {
-    filter:brightness(.9)sepia(.6) hue-rotate(-18deg) saturate(1.7);
+    filter:brightness(.9)sepia(.6) hue-rotate(-8deg) saturate(1.7);
     transition: filter .5s, transform .3s;
     opacity:1;
     height:31px;
