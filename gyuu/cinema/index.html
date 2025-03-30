@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gyuu.</title>
+    <link rel="icon" type="image/x-icon" href="/!s/!img/home/blank.png">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/!f/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/!s/tooltip.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <audio id="bg-music" src="/!s/!mus/cyftlt.mp3" loop=""></audio>
+    <div class="opener">
+        <div class="img">
+            <div>
+                <p>enter?</p>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <a href="/home"><img src="/!s/!img/cinema/sign1.png"  class="back"></a>
+        <header>
+            <div class="filters">
+                <div class="button-group" data-filter-group="tvfilm">
+                    <button class="button is-checked" data-filter="">
+                        all
+                    </button>
+                    <button class="button" data-filter=".film">
+                        film
+                    </button>
+                    <button class="button" data-filter=".shortfilm">
+                        short film
+                    </button>
+                    <button class="button" data-filter=".tv">
+                        tv
+                    </button>
+                </div>
+                <div class="button-group" data-filter-group="location">
+                    <button class="button is-checked" data-filter="">
+                        all
+                    </button>
+                    <button class="button" data-filter=".us">
+                        🇺🇸
+                    </button>
+                    <button class="button" data-filter=".ca">
+                        🇨🇦
+                    </button>
+                    <button class="button" data-filter=".uk">
+                        🇬🇧
+                    </button>
+                    <button class="button" data-filter=".fr">
+                        🇫🇷
+                    </button>
+                    <button class="button" data-filter=".hk">
+                        🇭🇰
+                    </button>
+                    <button class="button" data-filter=".jp">
+                        🇯🇵
+                    </button>
+                </div>
+                <div class="button-group" data-filter-group="language">
+                    <button class="button is-checked" data-filter="">
+                        all
+                    </button>
+                    <button class="button" data-filter=".english">
+                        english
+                    </button>
+                    <button class="button" data-filter=".french">
+                        french
+                    </button>
+                    <button class="button" data-filter=".cantonese">
+                        cantonese
+                    </button>
+                    <button class="button" data-filter=".mandarin">
+                        mandarin
+                    </button>
+                    <button class="button" data-filter=".japanese">
+                        japanese
+                    </button>
+                </div>
+                <div class="button-group" data-filter-group="genre">
+                    <button class="button is-checked" data-filter="">
+                        all
+                    </button>
+                    <button class="button" data-filter=".action">
+                        action
+                    </button>
+                    <button class="button" data-filter=".comedy">
+                        comedy
+                    </button>
+                    <button class="button" data-filter=".crime">
+                        crime
+                    </button>
+                    <button class="button" data-filter=".drama">
+                        drama
+                    </button>
+                    <button class="button" data-filter=".fantasy">
+                        fantasy
+                    </button>
+                    <button class="button" data-filter=".horror">
+                        horror
+                    </button>
+                    <button class="button" data-filter=".romance">
+                        romance
+                    </button>
+                    <button class="button" data-filter=".scifi">
+                        sci-fi
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="sort-by-button">
+                <div class="button-group">
+                    <button class="button is-checked" data-sort-value="">
+                        initial
+                    </button>
+                    <button class="button" data-sort-value="name">
+                        alphabetically
+                    </button>
+                    <button class="button" data-sort-value="date">
+                        newest
+                    </button>
+                    <button class="button" data-sort-value="reverse">
+                        oldest
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="grid">
+            <!--adolescence-->
+            <div class="item tv drama crime english uk">
+                <img src="/!s/!img/cinema/posters/adolescence.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">adolescence</div>
+                    <div class="date">2025</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            adolescence
+                        </strong>
+                        <h4>
+                            2025
+                        </h4>
+                        <h5>
+                            dir. philip barantini
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--breathless-->
+            <div class="item film crime drama french fr">
+                <img src="/!s/!img/cinema/posters/breathless.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">breathless</div>
+                    <div class="date">1960</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            breathless
+                        </strong>
+                        <h4>
+                            1960
+                        </h4>
+                        <h5>
+                            dir. jean-luc godard
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--fauve-->
+            <div class="item shortfilm drama french ca">
+                <img src="/!s/!img/cinema/posters/fauve.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">fauve</div>
+                    <div class="date">2018</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            fauve
+                        </strong>
+                        <h4>
+                            2018
+                        </h4>
+                        <h5>
+                            dir. jérémy comte
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--lilo and stitch-->
+            <div class="item film comedy scifi english us">
+                <img src="/!s/!img/cinema/posters/liloandstitch.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">lilo and stitch</div>
+                    <div class="date">2002</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            lilo and stitch
+                        </strong>
+                        <h4>
+                            2002
+                        </h4>
+                        <h5>
+                            dir. chris sanders
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--twins in paradise-->
+            <div class="item shortfilm drama english us">
+                <img src="/!s/!img/cinema/posters/twinsinparadise.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">twins in paradise</div>
+                    <div class="date">2020</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            twins in paradise
+                        </strong>
+                        <h4>
+                            2020
+                        </h4>
+                        <h5>
+                            dir. victoria vincent
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--bottoms-->
+            <div class="item film comedy romance english us">
+                <img src="/!s/!img/cinema/posters/bottoms.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">bottoms</div>
+                    <div class="date">2023</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            bottoms
+                        </strong>
+                        <h4>
+                            2023
+                        </h4>
+                        <h5>
+                            dir. emma seligman
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--a clockwork orange-->
+            <div class="item film action comedy crime drama scifi english uk">
+                <img src="/!s/!img/cinema/posters/aclockworkorange.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">a clockwork orange</div>
+                    <div class="date">1971</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            a clockwork orange
+                        </strong>
+                        <h4>
+                            1971
+                        </h4>
+                        <h5>
+                            dir. stanley kubrick
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--its such a beautiful day-->
+            <div class="item film comedy english us">
+                <img src="/!s/!img/cinema/posters/itssuchabeautifulday.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">it's such a beautiful day</div>
+                    <div class="date">2012</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            it's such a beautiful day
+                        </strong>
+                        <h4>
+                            2012
+                        </h4>
+                        <h5>
+                            dir. don hertzfeldt
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--donnie darko-->
+            <div class="item film horror scifi english us">
+                <img src="/!s/!img/cinema/posters/donniedarko.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">donnie darko</div>
+                    <div class="date">2001</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            donnie darko
+                        </strong>
+                        <h4>
+                            2001
+                        </h4>
+                        <h5>
+                            dir. richard kelly
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--all of us strangers-->
+            <div class="item film drama romance fantasy english uk">
+                <img src="/!s/!img/cinema/posters/allofusstrangers.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">all of us strangers</div>
+                    <div class="date">2023</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            all of us strangers
+                        </strong>
+                        <h4>
+                            2023
+                        </h4>
+                        <h5>
+                            dir. andrew haigh
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--i saw the tv glow-->
+            <div class="item film drama horror english us">
+                <img src="/!s/!img/cinema/posters/isawthetvglow.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">i saw the tv glow</div>
+                    <div class="date">2024</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            i saw the tv glow
+                        </strong>
+                        <h4>
+                            2024
+                        </h4>
+                        <h5>
+                            dir. jane schoenbrun
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--her-->
+            <div class="item film drama romance scifi english us">
+                <img src="/!s/!img/cinema/posters/her.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">her</div>
+                    <div class="date">2013</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            her
+                        </strong>
+                        <h4>
+                            2013
+                        </h4>
+                        <h5>
+                            dir. spike jonze
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--the batman-->
+            <div class="item film action crime english us">
+                <img src="/!s/!img/cinema/posters/thebatman.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">the batman</div>
+                    <div class="date">2022</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            the batman
+                        </strong>
+                        <h4>
+                            2022
+                        </h4>
+                        <h5>
+                            dir. matt reeves
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--south park bigger longer uncut-->
+            <div class="item film comedy english us">
+                <img src="/!s/!img/cinema/posters/biggerlongeruncut.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">south park: bigger, longer & uncut</div>
+                    <div class="date">1999</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            south park: bigger, longer & uncut
+                        </strong>
+                        <h4>
+                            1999
+                        </h4>
+                        <h5>
+                            dir. trey parker
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--in the mood for love-->
+            <div class="item film drama romance cantonese hk">
+                <img src="/!s/!img/cinema/posters/inthemoodforlove.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">in the mood for love</div>
+                    <div class="date">2000</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            in the mood for love (花樣年華)
+                        </strong>
+                        <h4>
+                            2000
+                        </h4>
+                        <h5>
+                            dir. wong kar-wai
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--whiplash-->
+            <div class="item film drama english usa">
+                <img src="/!s/!img/cinema/posters/whiplash.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">whiplash</div>
+                    <div class="date">2014</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            whiplash
+                        </strong>
+                        <h4>
+                            2014
+                        </h4>
+                        <h5>
+                            dir. damien chazelle
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--trainspotting-->
+            <div class="item film crime drama english uk">
+                <img src="/!s/!img/cinema/posters/trainspotting.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">trainspotting</div>
+                    <div class="date">1996</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            trainspotting
+                        </strong>
+                        <h4>
+                            1996
+                        </h4>
+                        <h5>
+                            dir. danny boyle
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--clue-->
+            <div class="item film comedy crime english us">
+                <img src="/!s/!img/cinema/posters/clue.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">clue</div>
+                    <div class="date">1985</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            clue
+                        </strong>
+                        <h4>
+                            1985
+                        </h4>
+                        <h5>
+                            dir. jonathan lynn
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--eighth grade-->
+            <div class="item film comedy drama english us">
+                <img src="/!s/!img/cinema/posters/eighthgrade.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">eighth grade</div>
+                    <div class="date">2018</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            eighth grade
+                        </strong>
+                        <h4>
+                            2018
+                        </h4>
+                        <h5>
+                            dir. bo burnham
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--didi-->
+            <div class="item film comedy drama english mandarin us">
+                <img src="/!s/!img/cinema/posters/didi.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">didi</div>
+                    <div class="date">2024</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            dìdi (弟弟)
+                        </strong>
+                        <h4>
+                            2024
+                        </h4>
+                        <h5>
+                            dir. sean wang
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--look back-->
+            <div class="item film drama japanese jp">
+                <img src="/!s/!img/cinema/posters/lookback.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">look back</div>
+                    <div class="date">2024</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            look back
+                        </strong>
+                        <h4>
+                            2024
+                        </h4>
+                        <h5>
+                            dir. kiyotaka oshiyama
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--arrival-->
+            <div class="item film drama scifi english us">
+                <img src="/!s/!img/cinema/posters/arrival.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">arrival</div>
+                    <div class="date">2016</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            arrival
+                        </strong>
+                        <h4>
+                            2016
+                        </h4>
+                        <h5>
+                            dir. denis villeneuve
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--aftersun-->
+            <div class="item film drama english uk">
+                <img src="/!s/!img/cinema/posters/aftersun.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">aftersun</div>
+                    <div class="date">2022</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            aftersun
+                        </strong>
+                        <h4>
+                            2022
+                        </h4>
+                        <h5>
+                            dir. charlotte wells
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--mamma mia-->
+            <div class="item film comedy romance english uk">
+                <img src="/!s/!img/cinema/posters/mammamia.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">mamma mia</div>
+                    <div class="date">2008</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            mamma mia
+                        </strong>
+                        <h4>
+                            2009
+                        </h4>
+                        <h5>
+                            dir. phyllida lloyd
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--mysterious skin-->
+            <div class="item film drama scifi english us">
+                <img src="/!s/!img/cinema/posters/mysteriousskin.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">mysterious skin</div>
+                    <div class="date">2004</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            mysterious skin
+                        </strong>
+                        <h4>
+                            2004
+                        </h4>
+                        <h5>
+                            dir. gregg araki
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--beau travail-->
+            <div class="item film drama french fr">
+                <img src="/!s/!img/cinema/posters/beautravail.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">beau travail</div>
+                    <div class="date">1999</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            beau travail
+                        </strong>
+                        <h4>
+                            1999
+                        </h4>
+                        <h5>
+                            dir. claire dennis
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--zero day-->
+            <div class="item film crime drama english us">
+                <img src="/!s/!img/cinema/posters/zeroday.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">zero day</div>
+                    <div class="date">2002</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            zero day
+                        </strong>
+                        <h4>
+                            2002
+                        </h4>
+                        <h5>
+                            dir. ben coccio
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--bojack horseman-->
+            <div class="item tv comedy drama fantasy english us">
+                <img src="/!s/!img/cinema/posters/bojackhorseman.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">bojack horseman</div>
+                    <div class="date">2014</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            bojack horseman
+                        </strong>
+                        <h4>
+                            2014
+                        </h4>
+                        <h5>
+                            raphael bob-waksberg
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--the watermelon woman-->
+            <div class="item film comedy drama romance english us">
+                <img src="/!s/!img/cinema/posters/thewatermelonwoman.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">the watermelon woman</div>
+                    <div class="date">1996</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            the watermelon woman
+                        </strong>
+                        <h4>
+                            1996
+                        </h4>
+                        <h5>
+                            dir. cheryl dunye
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--mean girls-->
+            <div class="item film comedy drama romance english us">
+                <img src="/!s/!img/cinema/posters/meangirls.jpg" class="poster">
+                <div class="metadata">
+                    <div class="name">mean girls</div>
+                    <div class="date">2004</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlayinfo">
+                        <strong>
+                            mean girls
+                        </strong>
+                        <h4>
+                            2004
+                        </h4>
+                        <h5>
+                            dir. mark waters
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="open.mp3" id="open"></audio>
+</body>
+
+<script src="/!s/mus.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const enterText = document.querySelector('.opener .img p');
+        const openerDiv = document.querySelector('.opener');
+        const wrapDiv = document.querySelector('.wrap');
+        const htmlElement = document.documentElement;
+        const openAudio = document.getElementById('open');
+
+        if (enterText && openerDiv && wrapDiv && openAudio) {
+            enterText.addEventListener('click', () => {
+                openAudio.play();
+                setTimeout(() => {
+                    openerDiv.style.display = 'none';
+                    wrapDiv.style.pointerEvents = 'all';
+                    wrapDiv.style.display = 'block';
+                    htmlElement.style.overflow = 'scroll';
+                }, 600);
+            });
+        }
+    });
+</script>
+
+</html>
