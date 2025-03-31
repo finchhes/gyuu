@@ -46,6 +46,19 @@ h1 {
     margin-bottom:6px;
 }
 
+.mobilewarn {
+    display:none;
+    padding:8px;
+    width:70vw;
+    margin:auto;
+    color:#85582d;
+    font-weight: bolder;
+    background-color: #F4F0D2;
+    border:solid 2px ;
+    margin-bottom:20px;
+    font-size: 3.6vw;
+}
+
 .wrap {
     position: relative;
     width:100%;
@@ -96,14 +109,15 @@ h1 {
 
 .gifs {
     position:absolute;
-    pointer-events: none;
-    image-rendering: pixelated;
-}
-
-.gif1 {
-    z-index:10;
+    right:0;
+    bottom:0;
+    left:0;
+    top:0;
     top:200px;
     left:210px;
+    pointer-events: none;
+    image-rendering: pixelated;
+    z-index:10;
 }
 
 main {
@@ -732,6 +746,141 @@ footer a {
 }
 
 
-@media screen and (max-width: 1111px) {
+@media screen and (max-width: 626px) {
+    body {
+        width:100%;
+    }
 
+    .mobilewarn {
+        display:block;
+    }
+
+    main {
+        width:80vw;
+        height:51vw;
+        display: grid;
+        padding:2vw;
+        padding-right:7vw;
+  grid-template-columns: 50% 50%;
+  background-size: cover;
+    }
+
+    .mainscroll, .mainside {
+        height:46vw !important;
+        font-size:4vw !important;
+        display:block;
+    }
+
+    .mainside {
+        font-size:3vw !important;
+        margin-left:-12px;
+        top:90px !important;
+    }
+
+    .mainside p {
+        display:none;
+    }
+
+    .coins {
+        width: 32vw;
+    }
+
+    .thief {
+        display:block;
+        left: 45px;
+        top:0 !important;
+    }
+
+    .wrap {
+        display:block;
+        width:100%;
+    }
+
+    .gifs {
+        display:none;
+    }
+
+    .pca {
+        display:block;
+        width:100%;
+        justify-content: center;
+        height:max-content;
+        margin-bottom:50px;
+    }
+
+    .jack {
+        display:none;
+    }
+
+    .artifact {
+        display:none;
+    }
+
+    .contart {
+        width:100%
+    }
+
+    .contact {
+        margin:auto;
+        width:60vw;
+        height:35vw;
+    }
+
+    nav {
+        width:60vw;
+        height:40vw;
+        margin:auto;
+        background-image: url(/!s/!img/home/map2.png);
+    }
+
+    .navbody {
+        opacity:1 !important;
+        padding:3vw;
+        padding-left:5vw !important;
+    }
+
+    .navfooter {
+        display:none;
+    }
+
+    .journalwrap {
+        width:70vw;
+        margin:auto;
+    }
+
+    .todowrap {
+        width:65vw;
+        margin:auto;
+    }
+
+    .music {
+        width:60vw;
+        margin:auto;
+        margin-top:20px;
+    }
+
+    .gif {
+        display:none;
+    }
+
+    .poster {
+        width:65vw;
+        margin:auto;
+        height:90vw;
+        background: url(/!s/!img/home/tryal2.jpg);
+        background-size: cover;
+    }
+
+    .poster:hover {
+        background: url(/!s/!img/home/tryal2.jpg);
+        background-size: cover;
+    }
+
+    .posterbody {
+        opacity:1;
+    }
+
+    .posterfooter {
+        display:none;
+    }
 }

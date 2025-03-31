@@ -12,6 +12,9 @@ html {
 .wrap {
     margin:auto;
     max-width:500px;
+    max-height:350px;
+    width:70vw;
+    height:48vw;
     margin-top: 10%;
     text-align: center;
     padding:21px;
@@ -127,4 +130,43 @@ button {
     background-size: 120%;
     background-blend-mode:soft-light;
     filter:drop-shadow(0 0 2px #3e10059a);
+}
+
+@media screen and (max-width: 626px) { 
+
+    .wrap {
+        
+        font-size: 2.5vw;
+    }
+    h1 {
+        font-size:6vw;
+        margin-top:6vw;
+        margin-bottom:-10px;
+    }
+
+    .dclw {
+        left:-10vw !important;
+    }
+
+    .dcl {
+        width:18vw !important;
+        height:25vw !important;
+    }
+
+    .potcw {
+        display:none;
+    }
+
+    button {
+        font-size: 2.5vw;
+    }
+
+    .hang {
+        width:50vw;
+    }
+    h2 {
+        margin-top:2vw;
+        font-size:6vw !important;
+    }
+
 }
