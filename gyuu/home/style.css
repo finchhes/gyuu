@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 html {
@@ -60,7 +61,7 @@ h1 {
 .l,.c,.r {
     display:flex;
     flex-direction: column;
-    gap:60px;
+    gap: 30px;
 }
 
 
@@ -70,12 +71,11 @@ h1 {
 
 .c {
     grid-area: c;
-    gap: 30px;
 }
 
 .r {
     grid-area: r;
-    gap:30px;
+    margin-top:-15px;
 }
 
 .pca {
@@ -146,8 +146,9 @@ main .mainscroll {
 main .mainside {
     position:relative;
     color:#438C98;
-    top:65px;
+    top:75px;
     height:81%;
+    font-weight: bolder;
 }
 
 .coins {
@@ -178,23 +179,26 @@ main .mainside {
     cursor:help;
 }
 
+
+audio:hover {
+    filter: drop-shadow(0px 0px 6px #3e1005e1);
+    transform:scale(1.01);
+    transition: 0.3s;
+}
+
 nav {
-    grid-area: map;
     padding:6px;
     background-image:url(/!s/!img/home/map.png);
-    background-size: 85%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
     height:130px;
     width:100%;
-    margin:auto;
     transform:rotate(-1deg);
     filter: drop-shadow(0px 0px 4px #3e10059a);
     transition: 0.3s;
     color: #473634;
     font-family: ugly;
-    margin-bottom:-40px;
-    margin-top:30px;
 }
 
 nav:hover {
@@ -250,6 +254,7 @@ nav .navbody a {
 }
 
 .journalwrap {
+    display:block;
     grid-area: journal;
     position:relative;
     background-size: 180%;
@@ -257,11 +262,12 @@ nav .navbody a {
 }
 
 .journalrings {
-    position:relative;
+    position:absolute;
     width:100%;
     z-index:10;
-    margin-bottom:-40px;
-    top:-3px;
+    top:0px;
+    height:30px;
+    object-fit: cover;
 }
 
 .journal {
@@ -274,10 +280,9 @@ nav .navbody a {
     color: #451902;
     border-radius: 8px;
     height:100%;
-    margin-left:auto;
-    margin-right:auto;
     padding-top:20px !important;
     font-family:tnanti;
+    top:10px;
 }
 
 .journal .journalscroll {
@@ -331,68 +336,64 @@ nav .navbody a {
     display: block;
 }
 
-.todo {
-    grid-area: todo;
-    padding:6px;
-    background-image:url(/!s/!img/home/notebook.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    transform:rotate(3deg);
+.todowrap {
     filter: drop-shadow(0px 0px 4px #3e10059a);
-    font-family:tnanti;
-    padding:10px;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    color: #85582d;
-    transition:.3s;
+    transition: .3s;
+    transform:perspective(100px)rotatey(-.7deg) rotatex(2.5deg);
 }
 
-.todo:hover {
+.todowrap:has(.todo:hover) {
     filter: drop-shadow(0px 0px 6px #3e1005e1);
-    transition:.3s;
-    transform:rotate(.2deg);
+    transform:perspective(100px)rotatey(-.7deg) rotatex(1.5deg);
 }
 
-.todoleft, .todoright {
-    filter: drop-shadow(0px 0 4px #F4EFDCba) drop-shadow(-0px 0 4px #F4EFDCba) drop-shadow(0 -0px 4px #F4EFDCba) drop-shadow(0 0px 4px #F4EFDCba);
-    font-size:15.5px;
-    display:flex;
-    flex-direction: column;
-    gap:4px;
-}
-
-.todotitle {
-    margin-bottom:2px;
-    font-size:19px;
-    color:#451902;
-}
-
-.todo span:before {
-    content:'☠︎︎ ';
-}
-
-
-.todoleft, .todoright {
-    filter: drop-shadow(0px 0 4px #F4EFDCba) drop-shadow(-0px 0 4px #F4EFDCba) drop-shadow(0 -0px 4px #F4EFDCba) drop-shadow(0 0px 4px #F4EFDCba);
-    font-size:15.5px;
-    display:flex;
-    flex-direction: column;
-    gap:4px;
+.todo {
+    padding:10px;
+    height:215px;
+    border-radius:4px;
+    background:#e9d6ad;
+    clip-path: url(#ragged-image-border);
+    color:#92573a;
+    font-family: lazy;
+    font-size:18px;
+    overflow: scroll;
 }
 
 .todotitle {
-    margin-bottom:2px;
-    font-size:19px;
-    color:#451902;
+    font-family:ugly;
+    font-size:20px;
+    border-bottom: dashed 1px;
+    padding-bottom:4px;
+    margin-bottom:4px;
+    color:#602a0f;
 }
 
-.todo span:before {
-    content:'☠︎︎ ';
+.todo span {
+    display:block;
+    margin-top:3px;
+}
+
+.todo span:not(:has(del)):before {
+    content:'- '
+}
+
+.todo span:has(del):before {
+    content:'✓ '
+}
+
+.todo a {
+    color:#438C98;
+}
+
+svg {
+    height:0;
+    width:0;
+    pointer-events: none;
 }
 
 .music {
     grid-area:music;
-    padding:8px;
+
     font-family:faith;
     letter-spacing: 1.5px;
     color:#055;
@@ -436,7 +437,6 @@ nav .navbody a {
 }
 
 .poster {
-    grid-area:poster;
     background: url(/!s/!img/home/tryal.jpg) center / cover no-repeat;
     transform:rotate(-3deg);
     border-radius:4px;
@@ -446,6 +446,7 @@ nav .navbody a {
     font-family: ugly;
     font-size:17px;
     height:320px;
+    margin-top:20px;
 }
 
 .poster a {
@@ -520,9 +521,7 @@ nav .navbody a {
     background:url(/!s/!img/home/compass.png) center / cover;
     filter: drop-shadow(0px 0px 3px #3e10059a);
     border-radius:.5px;
-    transform:rotate(.6deg);
-    margin-top:-10px;
-    margin-bottom:10px;
+    margin:0;
 }
 
 .artifact {
@@ -732,138 +731,7 @@ footer a {
     opacity:.8;
 }
 
- /*
-@media screen and (max-width: 1000px) {
 
-    body {
-        padding:0px !important;
-    }
-    .wrap {
-        display:block;
-        max-width:300px !important;
-        width:100%;
-        margin:auto;
-    }
+@media screen and (max-width: 1111px) {
 
-    main {
-        height:200px !important;
-        background-size: contain;
-        margin-bottom:30px;
-        margin-top:30px;
-    }
-
-    main .mainscroll {
-        text-indent: 20px;
-        height:100%;
-        width:110px;
-        overflow:scroll;
-        padding-top:18px;
-        font-size:18px;
-        font-family:lazy;
-    }
-
-    main .mainside {
-        left:20px;
-        top:-20px;
-    }
-
-    main .mainside p {
-        display:none;
-    }
-
-    .coins {
-        top:20px;
-        left:-20px;
-        padding:0px;
-        max-width:110px;
-        margin-bottom:0px !important;
-        margin-top:40px;
-        margin-right:10px;
-    }
-
-    .coins:hover {
-        width:initial;
-        filter: drop-shadow(0px 0px 6px #8CCDD5);
-    }
-
-    .thief {
-        top:110px;
-        left:10px;
-    }
-
-    nav {
-        background-image:url(/!s/!img/home/map2.png);
-        width:200px;
-    }
-
-    nav .navbody {
-        opacity:1;
-    }
-
-    .navfooter {
-        display:none;
-    }
-
-    .journal {
-        height:400px;
-        width:85%;
-        margin-top:20px;
-        margin-bottom:20px;
-    }
-
-    .journalrings {
-        width:90%;
-        z-index:10;
-        margin-bottom:-43px;
-        top:15px;
-        margin-left:15px;
-    }
-
-    .todo {
-        background-position: center;
-        height:180px !important;
-        margin-bottom:10px;
-    }
-
-    .todo .todoleft {
-        width:70%;
-        margin-left:auto;
-        padding:3px;
-    }
-
-    .music {
-        width:70%;
-        margin:auto;
-    }
-
-    .poster {
-        background: url(/!s/!img/home/tryal2.jpg) 40% center / cover no-repeat;
-        width:80%;
-        transform: rotate(-3deg) scale(.8);
-        margin:auto;
-    }
-
-    .poster:hover {
-        transform: rotate(-1deg) scale(.8);
-    }
-
-    .posterbody {
-        opacity:1;
-    }
-
-    .posterfooter {
-        top:20px;
-    }
-
-    .gif {
-        display:none;
-    }
-
-    .kidd {
-        display:none;
-    }
-
-    .contact {
-        margin-bottom:20px;
-    }
 }
