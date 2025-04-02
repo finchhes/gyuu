@@ -1,3 +1,20 @@
+@import url(/!s/reset.css);
+
+@font-face {
+  font-family: plane;
+  src: url(/!f/fonts/PLANE___.woff2);
+}
+
+@font-face {
+  font-family: buka;
+  src: url(/!f/fonts/Buka\ Bird.woff2);
+}
+
+@font-face {
+  font-family: space;
+  src: url(/!f/fonts/Space\ Encounter\ .woff2);
+}
+
 * {
     box-sizing:border-box;
     scroll-behavior: smooth;
@@ -57,6 +74,10 @@ body {
     transition: .5s;
     transform: scale(1) perspective(1000px);
     backdrop-filter: blur(2px);
+}
+
+p {
+  margin-top:12px;
 }
 
 .t:hover {

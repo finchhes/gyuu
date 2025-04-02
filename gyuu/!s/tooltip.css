@@ -1,3 +1,5 @@
+@import url(https://use.typekit.net/lvi0exf.css);
+
 #s-m-t-tooltip{
 	max-width:240px;
     height:max-content !important;
@@ -10,10 +12,11 @@
     background-size: 100% 100%;
 	border-radius:6px;
 	font-family: mikiyu;
-	font-size:13px;
+	font-size:18.5px;
 	line-height:18px;
 	color:#faf7df;
     text-align: center;
-    font-family: manu;
+    font-family: black-beard;
     letter-spacing: .8px;
+	-webkit-font-smoothing: antialiased;
 }

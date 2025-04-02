@@ -1,0 +1,142 @@
+@import url(/!s/reset.css);
+@import url(/!s/tooltip.css);
+
+html {
+    background:url(/!s/!img/colophon/bg.png);
+    background-size: 1500px;
+    image-rendering: pixelated;
+    background-position: 100% bottom;
+    background-position-x: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+main {
+    background:url(/!s/!img/colophon/scroll.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:888px;
+    max-width:750px;
+    margin:auto;
+    padding:120px;
+    filter:drop-shadow(0 0 10px black)
+}
+
+a {
+    color:#CC3D1E;
+    transition: .3s;
+    display:inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover {
+    color:#A9220F;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #A9220F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  a:after {
+    content:''
+  }
+
+.scroll {
+    text-align: center;
+    height:100%;
+    overflow: scroll;
+    scrollbar-color: transparent;
+    scrollbar-width:none;
+    display:block;
+}
+
+h1 {
+    font-family:black-beard;
+    letter-spacing: 8px;
+    font-size: 56px;
+    color:#4A2810;
+    margin-top:-24px;
+}
+
+.line {
+    border-bottom:solid 2px #4A2810;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:400px;
+}
+
+.o {
+    opacity:30%;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.h {
+    width:10%;
+    border-bottom:dotted;
+}
+
+h2 {
+    font-family:black-beard;
+    letter-spacing:6px;
+    font-size: 32px;
+    color:#4A2810;
+}
+
+h3 {
+    font-family:black-beard;
+    letter-spacing:4px;
+    font-size: 24px;
+    color:#4A2810;
+}
+
+p {
+    font-family:black-beard;
+    letter-spacing:1.5px;
+    font-size: 24px;
+    color:#4A2810;
+    font-weight: 600;
+    margin:auto;
+    width:85%;
+}
+
+p span {
+    display:block;
+    text-align: left;
+    margin-bottom:10px;
+}
+
+p span:before {
+    content:'- '
+}
+
+.copyright {
+    font-size:13px;
+}
+
+.exit {
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: black-beard;
+    position: relative;
+    left:-220px;
+
+}

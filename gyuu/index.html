@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gyuu.</title>
     <link rel="icon" type="image/x-icon" href="/!s/!img/home/blank.png">
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/!f/style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/!s/tooltip.css" rel="stylesheet" type="text/css" media="all">
+    <link href="style.css?v=2.001" rel="stylesheet" type="text/css" media="all">
     <link rel="preload" fetchpriority="high" as="image" href="/!s/!img/home/postcard.png">
     <link rel="preload" fetchpriority="high" as="svg" href="/!s/!svg/tt.svg">
     <link rel="preload" as="image" href="/!s/!img/home/map2.png">
@@ -20,7 +18,7 @@
     <header>
         <div class="buttons">
             <div class="audio-player">
-                <audio id="bg-music" loop src="/!s/!mus/portroyal.mp3"></audio>
+                <audio id="bg-music" loop src="/!s/!mus/portroyal.mp3" loading="lazy" preload="none"></audio>
                 <button id="bgmbtn"
                     title="in queue: port royal curios and curiosities music loop.">toggle bgm</button>
                 <button onclick="toggleAutoplay()"
@@ -37,7 +35,7 @@
         <span style="opacity:.8;">a digital diary</span>.
     </header>
     <div class="wrap">
-        <img src="/!s/!img/home/gifs/skell2.gif" class="gifs">
+        <img src="/!s/!img/home/gifs/skell2.gif" class="gifs" alt="gif of a skeleton with a sword">
         <div class="mobilewarn">
             you've been detected to be on mobile! this page is responsive, but i highly recommend coming back on a
             computer.
@@ -49,60 +47,46 @@
                 <div class="mainscroll">
                     ahoy there, welcome to the high seas!
                     <br><br>
-                    this is a passion project and personal site focused on improving mental health and being a
-                    diary of sorts. as well as the usual wanting to escape social media and bringing back
-                    customisability in
-                    online spaces.
+                    this is a passion project and personal site focused on improving mental health and being a diary of sorts. as well as the usual wanting to escape social media and bringing back fun & creativity in online spaces.
                     <br><br>
-                    this site is themed around historical piracy and the ocean. the song youre listening to (or not if
-                    it's turned off) is from the
-                    pirates of the caribbean ride in disneyland, and you will continue to hear music from it throughout
-                    your time here.
-                    <br><br>
-                    usually an absolute nerd about being historically accurate, but for the sake of web design this
-                    isnt, obviously.
-                    <br><br>
-                    the 1700s werent real anyways...
-                    <img src="/!s/!img/home/gifs/shark.gif" style="width:100%;image-rendering: pixelated;">
+                    please feel free to use the toggles on the top right! they are there for your use and to hopefully make this as accessible as i can without sacrificing my creative freedom. if you think something is off, please email me! i'm still learning and more than happy to change things.
                 </div>
                 <!--main text end-->
                 <div class="mainside">
-                    <p style="font-family:faith;">
+                    <p style="font-family:p22-sting;">
                         sailing
                         <br>
                         &nbsp&nbsp on a ship in a bottle...
                     </p>
-                    <img src="/!s/!img/home/coins.png" class="coins" title="coins! click to take them.">
+                    <img src="/!s/!img/home/coins.png" class="coins" title="coins! click to take them." alt="image of a pile of coins" role="button" tabindex="0">
                     <p class="thief" title="why did you do that?">thief...</p>
                 </div>
             </main>
             <div class="pca">
                 <div class="jack">
                     <div class="imgh"></div>
-                    <img src="/!s/!img/home/jack.png" id="jack">
+                    <img src="/!s/!img/home/jack.png" id="jack" alt="image of a jack sparrow figurine, he is holding his hat to his head and standing on a sunken ship.">
                     <p style="margin-bottom:20px;">yo, ho! yo, ho! <br>a pirate's life for me!</p>
                     <p>
                         other ships
                     </p>
                     <div class="jbg">
                         <div class="jbgi">
-                            <a href="https://crotovane.neocities.org/" target="_blank"><img
-                                    src="/!s/!img/home/buttons/cro.png"></a>
-                            <a href="https://necrowmancy.info/" target="_blank"><img
-                                    src="/!s/!img/home/buttons/necro.png"></a>
+                            <a href="https://crotovane.neocities.org/" target="_blank" alt="crovotane button">
+                                <img src="/!s/!img/home/buttons/cro.png"></a>
+                            <a href="https://necrowmancy.info/" target="_blank"> 
+                                <img
+                                    src="/!s/!img/home/buttons/necro.png" alt="necrowmancy button"></a>
                             <a href="https://princss.online/" target="_blank"><img
-                                    src="/!s/!img/home/buttons/princess.png"></a>
+                                    src="/!s/!img/home/buttons/princess.png" alt="princss button"></a>
                             <a href="https://roboticoperatingbuddy.neocities.org" target="_blank"><img
-                                    src="/!s/!img/home/buttons/robo.jpg"></a>
+                                    src="/!s/!img/home/buttons/robo.jpg" alt="robotic operating buddy button"></a>
                             <div><a href="https://sanji.neocities.org/" target="_blank"><img class="freezeframe"
-                                        src="/!s/!img/home/buttons/toby.gif"></a></div>
+                                        src="/!s/!img/home/buttons/toby.gif" alt="sanji button"></a></div>
                             <div><a href="https://traversetown.neocities.org/" target="_blank"><img class="freezeframe"
-                                        src="/!s/!img/home/buttons/traverse.gif" width="88"></a></div>
+                                        src="/!s/!img/home/buttons/traverse.gif" width="88" alt="traverse town button"></a></div>
                             <div><a href="https://mazapandust.com" target="_blank"><img class="freezeframe"
-                                        src="/!s/!img/home/buttons/mazapan.gif"></a></div>
-                            <script>
-                                new Freezeframe();
-                            </script>
+                                        src="/!s/!img/home/buttons/mazapan.gif" alt="mazapan dust button"></a></div>
                         </div>
                     </div>
                 </div>
@@ -111,16 +95,16 @@
                         <div class="artifacttitle">
                             featured treasure</div>
                         <img src="/!s/!img/home/treasure.jpg"
-                            title="this is the worlds only surviving pirate chest, located in st augustine, florida, at the pirate and treasure museum. the plaque reads: 'imagine what riches this 150-lb, 400-year-old metal chest once held! it belonged to thomas tew, who made an enormous fortune raiding ships loaded with precious jewels, ivory, and silk in the indian ocean and red sea. if you look inside the lid of the ornate painted chest, you'll find shapes of mermaids worked into the design. if you exlore the bottom of the chest, you'll see a small case. that's where tew locked particularly valuable items.'">
+                            title="this is the worlds only surviving pirate chest, located in st augustine, florida, at the pirate and treasure museum. the plaque reads: 'imagine what riches this 150-lb, 400-year-old metal chest once held! it belonged to thomas tew, who made an enormous fortune raiding ships loaded with precious jewels, ivory, and silk in the indian ocean and red sea. if you look inside the lid of the ornate painted chest, you'll find shapes of mermaids worked into the design. if you exlore the bottom of the chest, you'll see a small case. that's where tew locked particularly valuable items.'" alt="image of the worlds only surviving pirate chest. the camera is angled and the chest is opened.">
                     </div>
                     <div class="contact">
                         no guestbook, use my <a href="https://neocities.org/site/gyuu">neocities</a> comments or <br>
                         <del>e</del>mail me <a href="mailto:gyuu4@proton.me" title="gyuu4@proton.me">here</a> directly.
                         <br><br>
-                        <img src="/!s/!img/home/button.png" title="site button, put it on your site if youd like!">
+                        <img src="/!s/!img/home/button.png" title="site button, put it on your site if youd like!" alt="my site button">
                         <br>
                         <img src="/!s/!img/home/gifs/chest.gif" style="width:40%;margin-top:10px;"
-                            title="keep your filthy hands off my treasure!">
+                            title="keep your filthy hands off my treasure!" alt="gif of a treasure chest opening and closing">
                     </div>
                 </div>
             </div>
@@ -138,14 +122,14 @@
                 <span class="navfooter">hover over me.</span>
             </nav>
             <aside class="journalwrap">
-                <img src="/!s/!img/home/rings.png" class="journalrings">
+                <img src="/!s/!img/home/rings.png" class="journalrings" alt="journal rings">
                 <div class="journal">
                     <div class="journalscroll">
                         <span style="font-size:22px;">pocket journal.</span>
                         <div class="filters">
-                            <a onclick="filterContainers('all')">all</a>
-                            <a onclick="filterContainers('tao')">tao</a>
-                            <a onclick="filterContainers('miles')">miles</a>
+                            <a onclick="filterContainers('all')" onkeydown="if(event.key === 'Enter') filterContainers('all')" role="button" tabindex="0">all</a>
+                            <a onclick="filterContainers('tao')" onkeydown="if(event.key === 'Enter') filterContainers('tao')" role="button" tabindex="0">tao</a>
+                            <a onclick="filterContainers('miles')" onkeydown="if(event.key === 'Enter') filterContainers('miles')" role="button" tabindex="0">miles</a>
                         </div>
                         <div class="entries">
                             <!-- entry temp
@@ -276,9 +260,10 @@
                     </div>
                     <span><del>re-do this list</del></span>
                     <span><del><a href="/cinema">cinema</a> page</del></span>
+                    <span><del>font optimisation</del></span>
                     <span>sitemap & credits</span>
                     <span>rss feed</span>
-                    <span>font optmisation</span>
+                    
                 </aside>
             </div>
         </div>
@@ -287,13 +272,13 @@
         <div class="r">
             <aside class="music">
                 <audio id="featured" loop
-                    src="https://res.cloudinary.com/louvre/video/upload/v1740680894/neocities/music/Joesef_-_Joe.mp3"></audio>
-                <img src="/!s/!img/home/hurdygurdy.png" class="instrument" id="player" onclick="playFeatured()"
-                    title="click to play the featured song! will toggle music off. currently: joe by joesef">
+                    src="https://res.cloudinary.com/louvre/video/upload/v1740680894/neocities/music/Joesef_-_Joe.mp3" loading="lazy" preload="none"></audio>
+                <img src="/!s/!img/home/hurdygurdy.png" class="instrument" id="player" onclick="playFeatured()" onkeydown="if(event.key === 'Enter') playFeatured()"
+                    title="click to play the featured song! will toggle music off if on. currently: joe by joesef" alt="image of a hurdy gurdy sourced from sea of thieves" role="button" tabindex="0">
                 <div class="musictitle">
                     care for <br> a shanty?
                 </div>
-                <a onclick="pauseFeatured()" title="stop the music?">i'm done.</a>
+                <a onclick="pauseFeatured()" onkeydown="if(event.key === 'Enter') pauseFeatured()" title="stop the music?" role="button" tabindex="0">i'm done.</a>
             </aside>
             <aside class="gif">
                 <video autoplay loop muted="true" height="100%" width="100%">
@@ -350,10 +335,9 @@
         <!--right sidebar end-->
     </div>
     <footer>
-        coded with care. sailing the indie web seas. <a href="https://github.com/finchhes/gyuu/" target="_blank">source
-            code.</a>
+        coded with care. sailing the indie web seas. <a href="/colophon">colophon</a>
     </footer>
-    <svg>s
+    <svg aria-label="paper border svg">
         <defs>
             <clipPath id="ragged-image-border" stroke="none" fill="none" clipPathUnits="objectBoundingBox">
                 <path
@@ -363,53 +347,9 @@
         </defs>
     </svg>
 </body>
-<!--autoplay-->
-<script>
-    window.onload = function () {
-        let autoplay = localStorage.getItem("autoplay") === "true";
-        let audio = document.getElementById("bg-music");
-        if (autoplay) {
-            audio.play();
-        }
-    };
-</script>
-<!--tooltips-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script src="/!s/jquery.style-my-tooltips.js"></script>
-<!--music-->
 <script src="/!s/mus.js"></script>
-<script src="/!s/toggles.js"></script>
-<!--coins-->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const image = document.querySelector(".coins");
-        const text = document.querySelector(".thief");
-
-        image.addEventListener("click", function () {
-            this.classList.add("clicked");
-
-            setTimeout(() => {
-                this.style.display = "none";
-                this.style.pointerEvents = "none";
-                text.style.display = "block";
-                text.style.pointerEvents = "all";
-            }, 1000);
-        });
-    });
-</script>
-<!--mini-diary-->
-<script>
-    function filterContainers(className) {
-        let containers = document.querySelectorAll('.container');
-        containers.forEach(container => {
-            if (className === 'all' || container.classList.contains(className)) {
-                container.classList.add('show');
-            } else {
-                container.classList.remove('show');
-            }
-        });
-    }
-    filterContainers('all');
-</script>
 
 </html>

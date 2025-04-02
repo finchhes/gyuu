@@ -1,3 +1,29 @@
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const image = document.querySelector(".coins");
+    const text = document.querySelector(".thief");
+
+    image.addEventListener("click", handleInteraction);
+    image.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            handleInteraction.call(this);
+        }
+    });
+
+    function handleInteraction() {
+        this.classList.add("clicked");
+
+        setTimeout(() => {
+            this.style.display = "none";
+            this.style.pointerEvents = "none";
+            text.style.display = "block";
+            text.style.pointerEvents = "all";
+        }, 1000);
+    }
+});
+
 window.onload = function () {
     const autoplayButton = document.getElementById("autoplaybtn");
     const bgmButton = document.getElementById("bgmbtn");
@@ -73,3 +99,18 @@ function pauseFeatured() {
     const audio = document.getElementById("featured");
     audio.pause();
 }
+
+
+function filterContainers(className) {
+    let containers = document.querySelectorAll('.container');
+    containers.forEach(container => {
+        if (className === 'all' || container.classList.contains(className)) {
+            container.classList.add('show');
+        } else {
+            container.classList.remove('show');
+        }
+    });
+}
+filterContainers('all');
+
+new Freezeframe();
