@@ -23,10 +23,11 @@ html {
 
 body {
     background-color: #eef1d45a;
-    max-width: 1111px;
+    width: 1111px;
     margin: auto;
     border-radius: 20px;
-    display:block;
+    transform-origin: top left;
+    display: block;
 }
 
 .buttons {
@@ -411,19 +412,10 @@ nav .navbody a {
 }
 
 .todowrap {
-    filter: drop-shadow(0px 0px 4px #3e10059a);
     transition: .3s;
     transform: perspective(100px) rotatex(.5deg);
-}
-
-.todowrap:has(.todo:hover) {
-    filter: drop-shadow(0px 0px 6px #3e1005e1);
-    transform: perspective(100px) rotatex(1.5deg);
-}
-
-.todo {
-    padding: 10px;
     height: 215px;
+    padding: 10px;
     border-radius: 4px;
     background: #e9d6ad;
     clip-path: url(#ragged-image-border);
@@ -433,15 +425,23 @@ nav .navbody a {
     font-size: 18px;
     overflow: scroll;
     line-height: .95;
+}
 
+.todowrap:hover{
+    filter: drop-shadow(0px 0px 6px #3e1005e1);
+    transform: perspective(100px) rotatex(1.5deg);
+}
+
+.todo {
+margin-bottom:10px;
+border-bottom: dashed 1px;
+    padding-bottom:12px;
+    margin-bottom: 12px;
 }
 
 .todotitle {
     font-family: tnanti;
     font-size: 20px;
-    border-bottom: dashed 1px;
-    padding-bottom: 4px;
-    margin-bottom: 4px;
     color: #602a0f;
     line-height:initial;
 }
@@ -461,6 +461,21 @@ nav .navbody a {
 
 .todo a {
     color: #438C98;
+}
+
+#commitLink {
+    font-size:16px;
+}
+
+#commitTitle {
+    font-family:tnanti;
+    font-size:18px;
+    border:0;
+    color:#602a0f;
+}
+
+#dateTime {
+    color:#92573a;
 }
 
 svg {

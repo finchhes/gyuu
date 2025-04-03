@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gyuu.</title>
     <link rel="icon" type="image/x-icon" href="/!s/!img/home/blank.png">
-    <link href="style.css?v=2.20330204" rel="stylesheet" type="text/css" media="all">
-    <!--preloads-->
+    <link href="style.css?v=2.001" rel="stylesheet" type="text/css" media="all">
     <link rel="preload" fetchpriority="high" as="image" href="/!s/!img/home/postcard.png">
     <link rel="preload" fetchpriority="high" as="svg" href="/!s/!svg/tt.svg">
     <link rel="preload" as="image" href="/!s/!img/home/map2.png">
@@ -254,17 +253,30 @@
                     </div>
                 </div>
             </aside>
-            <div class="todowrap">
-                <aside class="todo">
-                    <div class="todotitle">
-                        working on
+            <div style="filter: drop-shadow(0px 0px 4px #3e10059a);">
+                <aside class="todowrap">
+                    <div class="todo">
+                        <div class="todotitle">
+                            working on
+                        </div>
+                        <span><del>credits / colophon</del></span>
+                        <span><del>font optimisation</del></span>
+                        <span>sitemap</span>
+                        <span>rss feed</span>
                     </div>
-                    <span><del>re-do this list</del></span>
-                    <span><del><a href="/cinema">cinema</a> page</del></span>
-                    <span><del>font optimisation</del></span>
-                    <span>sitemap & credits</span>
-                    <span>rss feed</span>
-                    
+                    <div id="commitLink">
+                        <div>
+                            <a id="commitTitle" href="https://github.com/finchhes/gyuu/commits/main/" target="_blank">
+                                latest commit
+                            </a>
+                            <p id="dateTime">
+                                date at whenever
+                            </p>
+                            <p id="commitLatest">
+                                fetching... (or its broken or the api hates me/you)
+                            </p>
+                        </div>
+                </div>
                 </aside>
             </div>
         </div>
@@ -349,9 +361,7 @@
     </svg>
 </body>
 <script src="script.js"></script>
-<script src="/!s/mus.js"></script>
-
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="/!s/jquery.style-my-tooltips.js"></script>
-
+<script src="/!s/mus.js"></script>
 </html>
