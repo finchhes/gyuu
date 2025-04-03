@@ -7,17 +7,13 @@
     <title>gyuu.</title>
     <link rel="icon" type="image/x-icon" href="/!s/!img/home/blank.png">
     <link href="style.css?v=1" rel="stylesheet" type="text/css" media="all">
-    <!--for tooltips-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script src="/!s/jquery.style-my-tooltips.js"></script>
-    <!--end tooltips-->
 </head>
 
 <body>
     <div class="wrap">
         <a href="tao">
             <main id="toggleT">
-                <div id="wantedt" class="content visible" title="click for information on this criminal. MANDATORY AUTOPLAY, will trigger even if turned off. mute tab if sensitive.">
+                <div id="wantedt" class="content visible" tt="click for information on this criminal. MANDATORY AUTOPLAY, will trigger even if turned off. mute tab if sensitive.">
                     <h1>
                         WANTED
                     </h1>
@@ -34,7 +30,7 @@
         </a>
         <a href="miles">
             <main id="toggleM">
-                <div id="wantedm" class="content visible" title="click for information on this criminal.">
+                <div id="wantedm" class="content visible" tt="click for information on this criminal.">
                     <h1>
                         WANTED
                     </h1>
@@ -59,6 +55,11 @@
             </clipPath>
         </defs>
     </svg>
+    <div id="tooltip" class="tooltip"></div>
 </body>
+
+<script>
+    const tooltip=document.getElementById("tooltip"),tooltipElements=document.querySelectorAll("[tt]");let timeout;window.addEventListener("mousemove",e=>{tooltip.style.top=e.clientY+"px",tooltip.style.left=e.clientX+"px"}),window.addEventListener("scroll",()=>{tooltipElements.forEach(e=>{"block"===tooltip.style.display&&(tooltip.style.top=parseFloat(tooltip.style.top)+window.scrollY+"px")})}),tooltipElements.forEach(e=>{e.addEventListener("mouseover",t=>{tooltip.innerHTML=e.getAttribute("tt"),tooltip.style.display="block",tooltip.style.top=t.clientY+window.scrollY+"px",tooltip.style.left=t.clientX+"px",tooltip.style.opacity=0,setTimeout(()=>{tooltip.style.opacity=1},10)}),e.addEventListener("mouseout",()=>{tooltip.style.opacity=0}),tooltip.addEventListener("mouseover",()=>{clearTimeout(timeout)}),tooltip.addEventListener("mouseout",()=>{tooltip.style.opacity=0,setTimeout(()=>{tooltip.style.display="none"},200)})});
+</script>
 
 </html>

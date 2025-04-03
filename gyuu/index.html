@@ -20,13 +20,13 @@
             <div class="audio-player">
                 <audio id="bg-music" loop src="/!s/!mus/portroyal.mp3" loading="lazy" preload="none"></audio>
                 <button id="bgmbtn"
-                    title="in queue: port royal curios and curiosities music loop.">toggle bgm</button>
+                    tt="in queue: port royal curios and curiosities music loop.">toggle bgm</button>
                 <button onclick="toggleAutoplay()"
-                    title="warning: this will save your choice for future visits until you toggle it again." id="autoplaybtn">toggle
+                    tt="warning: this will save your choice for future visits until you toggle it again." id="autoplaybtn">toggle
                     autoplay for all pages</button>
             </div>
             <div class="accessibility">
-                <button id="hover" onclick="toggleHover()" title="as seen in the navigation map and update log.">show content on hover is on</button>
+                <button id="hover" onclick="toggleHover()" tt="as seen in the navigation map and update log.">show content on hover is on</button>
             </div>
         </div>
         <h1>
@@ -58,8 +58,8 @@
                         <br>
                         &nbsp&nbsp on a ship in a bottle...
                     </p>
-                    <img src="/!s/!img/home/coins.png" class="coins" title="coins! click to take them." alt="image of a pile of coins" role="button" tabindex="0">
-                    <p class="thief" title="why did you do that?">thief...</p>
+                    <img src="/!s/!img/home/coins.png" class="coins" tt="coins! click to take them." alt="image of a pile of coins" role="button" tabindex="0">
+                    <p class="thief" tt="why did you do that?">thief...</p>
                 </div>
             </main>
             <div class="pca">
@@ -95,16 +95,16 @@
                         <div class="artifacttitle">
                             featured treasure</div>
                         <img src="/!s/!img/home/treasure.jpg"
-                            title="this is the worlds only surviving pirate chest, located in st augustine, florida, at the pirate and treasure museum. the plaque reads: 'imagine what riches this 150-lb, 400-year-old metal chest once held! it belonged to thomas tew, who made an enormous fortune raiding ships loaded with precious jewels, ivory, and silk in the indian ocean and red sea. if you look inside the lid of the ornate painted chest, you'll find shapes of mermaids worked into the design. if you exlore the bottom of the chest, you'll see a small case. that's where tew locked particularly valuable items.'" alt="image of the worlds only surviving pirate chest. the camera is angled and the chest is opened.">
+                            tt="<p>this is the worlds only surviving pirate chest, located in st augustine, florida, at the pirate and treasure museum. the plaque reads: 'imagine what riches this 150-lb, 400-year-old metal chest once held! it belonged to thomas tew, who made an enormous fortune raiding ships loaded with precious jewels, ivory, and silk in the indian ocean and red sea. if you look inside the lid of the ornate painted chest, you'll find shapes of mermaids worked into the design. if you exlore the bottom of the chest, you'll see a small case. that's where tew locked particularly valuable items.'</p>" alt="image of the worlds only surviving pirate chest. the camera is angled and the chest is opened.">
                     </div>
                     <div class="contact">
                         no guestbook, use my <a href="https://neocities.org/site/gyuu">neocities</a> comments or <br>
-                        <del>e</del>mail me <a href="mailto:gyuu4@proton.me" title="gyuu4@proton.me">here</a> directly.
+                        <del>e</del>mail me <a href="mailto:gyuu4@proton.me" tt="gyuu4@proton.me">here</a> directly.
                         <br><br>
-                        <img src="/!s/!img/home/button.png" title="site button, put it on your site if youd like!" alt="my site button">
+                        <img src="/!s/!img/home/button.png" tt="site button, put it on your site if youd like!" alt="my site button">
                         <br>
                         <img src="/!s/!img/home/gifs/chest.gif" style="width:40%;margin-top:10px;"
-                            title="keep your filthy hands off my treasure!" alt="gif of a treasure chest opening and closing">
+                            tt="keep your filthy hands off my treasure!" alt="gif of a treasure chest opening and closing">
                     </div>
                 </div>
             </div>
@@ -287,11 +287,11 @@
                 <audio id="featured" loop
                     src="https://res.cloudinary.com/louvre/video/upload/v1740680894/neocities/music/Joesef_-_Joe.mp3" loading="lazy" preload="none"></audio>
                 <img src="/!s/!img/home/hurdygurdy.png" class="instrument" id="player" onclick="playFeatured()" onkeydown="if(event.key === 'Enter') playFeatured()"
-                    title="click to play the featured song! will toggle music off if on. currently: joe by joesef" alt="image of a hurdy gurdy sourced from sea of thieves" role="button" tabindex="0">
+                    tt="click to play the featured song! will toggle music off if on. currently: joe by joesef" alt="image of a hurdy gurdy sourced from sea of thieves" role="button" tabindex="0">
                 <div class="musictitle">
                     care for <br> a shanty?
                 </div>
-                <a onclick="pauseFeatured()" onkeydown="if(event.key === 'Enter') pauseFeatured()" title="stop the music?" role="button" tabindex="0">i'm done.</a>
+                <a onclick="pauseFeatured()" onkeydown="if(event.key === 'Enter') pauseFeatured()" tt="stop the music?" role="button" tabindex="0">i'm done.</a>
             </aside>
             <aside class="gif">
                 <video autoplay loop muted="true" height="100%" width="100%">
@@ -359,9 +359,8 @@
             </clipPath>
         </defs>
     </svg>
+    <div id="tooltip" class="tooltip"></div>
 </body>
-<script src="script.js?v=1.03041600"></script>
+<script src="script.js?v=1.03041914"></script>
 <script src="/!s/mus.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="/!s/jquery.style-my-tooltips.js"></script>
 </html>

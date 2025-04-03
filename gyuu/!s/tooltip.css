@@ -1,7 +1,8 @@
 @import url(https://use.typekit.net/lvi0exf.css);
 
-#s-m-t-tooltip{
+.tooltip{
 	position: absolute;
+    display:none;
 	max-width:240px;
 	min-width: 180px;
 	z-index:100;

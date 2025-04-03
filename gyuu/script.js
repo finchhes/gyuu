@@ -77,6 +77,9 @@ window.onload = () => {
                 : "show content on hover is on";
         });
     }
+    
+    //tooltip
+    const tooltip=document.getElementById("tooltip"),tooltipElements=document.querySelectorAll("[tt]");let timeout;window.addEventListener("mousemove",e=>{tooltip.style.top=e.clientY+"px",tooltip.style.left=e.clientX+"px"}),window.addEventListener("scroll",()=>{tooltipElements.forEach(e=>{"block"===tooltip.style.display&&(tooltip.style.top=parseFloat(tooltip.style.top)+window.scrollY+"px")})}),tooltipElements.forEach(e=>{e.addEventListener("mouseover",t=>{tooltip.innerHTML=e.getAttribute("tt"),tooltip.style.display="block",tooltip.style.top=t.clientY+window.scrollY+"px",tooltip.style.left=t.clientX+"px",tooltip.style.opacity=0,setTimeout(()=>{tooltip.style.opacity=1},10)}),e.addEventListener("mouseout",()=>{tooltip.style.opacity=0}),tooltip.addEventListener("mouseover",()=>{clearTimeout(timeout)}),tooltip.addEventListener("mouseout",()=>{tooltip.style.opacity=0,setTimeout(()=>{tooltip.style.display="none"},200)})});
 };
 
 function playFeatured() {
@@ -106,4 +109,4 @@ filterContainers("all");
 new Freezeframe();
 
 //commit 
-fetch('https://api.github.com/repos/finchhes/gyuu/commits?per_page=1').then(res=>res.json()).then(res=>{let sha=res[0].sha,authorDate=new Date(res[0].commit.author.date);document.getElementById('commitLatest').innerText=res[0].commit.message;document.getElementById('dateTime').innerText=authorDate.toLocaleDateString('en-GB',{day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'});});
+//fetch('https://api.github.com/repos/finchhes/gyuu/commits?per_page=1').then(res=>res.json()).then(res=>{let sha=res[0].sha,authorDate=new Date(res[0].commit.author.date);document.getElementById('commitLatest').innerText=res[0].commit.message;document.getElementById('dateTime').innerText=authorDate.toLocaleDateString('en-GB',{day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'});});
