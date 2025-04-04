@@ -14,14 +14,4 @@ const STORAGE_KEY = "autoplay";
             backgroundAudio.pause();
         }
 
-        document.addEventListener("visibilitychange", function () {
-            if (document.hidden) {
-                backgroundAudio.pause();
-            } else if (autoplay) {
-                backgroundAudio.play().catch(() => {
-                    console.log("Autoplay was blocked by the browser. User interaction is required.");
-                });
-            }
-        });
-
         

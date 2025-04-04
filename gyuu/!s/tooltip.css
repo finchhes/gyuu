@@ -1,7 +1,7 @@
 @import url(https://use.typekit.net/lvi0exf.css);
 
 .tooltip{
-	position: absolute;
+	position: fixed;
     display:none;
 	max-width:240px;
 	min-width: 180px;
@@ -20,4 +20,6 @@
     font-family: black-beard;
     letter-spacing: .8px;
 	-webkit-font-smoothing: antialiased;
+	pointer-events: none;
+	transition: .15s;
 }
