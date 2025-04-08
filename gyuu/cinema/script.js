@@ -65,3 +65,4 @@ function getOnButtonGroupClick(buttonGroup) {
     event.target.classList.add("is-checked");
   };
 }
+window.onload=()=>{const e=document.getElementById("bgmbtn"),t=document.getElementById("bg-music");e&&t&&(e.textContent=t.paused?"music is off":"music is on",e.addEventListener("click",()=>{t.paused?(t.play(),e.textContent="music is on"):(t.pause(),e.textContent="music is off")}))};

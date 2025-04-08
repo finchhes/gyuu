@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gyuu.</title>
     <link rel="icon" type="image/x-icon" href="/!s/!img/home/blank.png">
-    <link href="style.css?v=1" rel="stylesheet" type="text/css" media="all">
+    <link href="style.css?v=1.06041028" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
+    <a href="/"><img src="/!s/!img/about/back.gif" class="back" tt="go back home?"></a>
     <div class="wrap">
         <a href="tao">
             <main id="toggleT">
@@ -59,7 +60,8 @@
 </body>
 
 <script>
-   const tooltip=document.getElementById("tooltip"),tooltipElements=document.querySelectorAll("[tt]");let timeout,mouseX=0,mouseY=0,tooltipX=0,tooltipY=0,hideTimeout;function updateTooltipPosition(){tooltipX+=(mouseX-tooltipX)*.1,tooltipY+=(mouseY-tooltipY)*.1,tooltip.style.top=tooltipY+"px",tooltip.style.left=tooltipX+"px",requestAnimationFrame(updateTooltipPosition)}updateTooltipPosition(),window.addEventListener("mousemove",e=>{mouseX=e.clientX,mouseY=e.clientY}),tooltipElements.forEach(e=>{e.addEventListener("mouseover",t=>{clearTimeout(hideTimeout),tooltip.innerHTML=e.getAttribute("tt"),tooltip.style.display="block",tooltip.style.opacity="0",tooltip.style.transform="scale(0.8)",tooltip.style.transition=".2s",timeout=setTimeout(()=>{tooltip.style.opacity="1",tooltip.style.transform="scale(1)"},50)}),e.addEventListener("mouseout",()=>{clearTimeout(timeout),hideTimeout=setTimeout(()=>{tooltip.style.opacity="0",tooltip.style.transform="scale(0.8)",setTimeout(()=>{"0"===tooltip.style.opacity&&(tooltip.style.display="none")},200)},50)})}),tooltip.addEventListener("mouseover",()=>{clearTimeout(hideTimeout),tooltip.style.opacity="1",tooltip.style.transform="scale(1)"}),tooltip.addEventListener("mouseout",()=>{hideTimeout=setTimeout(()=>{tooltip.style.opacity="0",tooltip.style.transform="scale(0.8)",setTimeout(()=>{"0"===tooltip.style.opacity&&(tooltip.style.display="none")},200)},50)});
+   const tooltip=document.getElementById("tooltip"),tooltipElements=document.querySelectorAll("[tt]");let mouseX=0,mouseY=0,tooltipX=0,tooltipY=0;function updateTooltipPosition(){tooltipX+=(mouseX-tooltipX)*.2,tooltipY+=(mouseY-tooltipY)*.2,tooltip.style.top=tooltipY+"px",tooltip.style.left=tooltipX+"px",requestAnimationFrame(updateTooltipPosition)}updateTooltipPosition(),window.addEventListener("mousemove",e=>{mouseX=e.clientX,mouseY=e.clientY}),tooltipElements.forEach(e=>{e.addEventListener("mouseover",()=>{tooltip.innerHTML=e.getAttribute("tt"),tooltip.style.display="block",tooltip.style.opacity="1",tooltip.style.transform="scale(1)"}),e.addEventListener("mouseout",()=>{tooltip.style.opacity="0",tooltip.style.transform="scale(1)",tooltip.style.display="none"})}),tooltip.addEventListener("mouseover",()=>{tooltip.style.opacity="1",tooltip.style.transform="scale(1)"}),tooltip.addEventListener("mouseout",()=>{tooltip.style.opacity="0",tooltip.style.transform="scale(1)"});
+
 </script>
 
 </html>

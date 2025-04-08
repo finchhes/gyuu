@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gyuu.</title>
     <link rel="icon" type="image/x-icon" href="/!s/!img/home/blank.png">
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/!f/style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/!s/tooltip.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="preload" as="image" href="/!s/!img/cinema/em1.png">
+    <link href="style.css?v=1.06041038" rel="stylesheet" type="text/css" media="all">
+    <link rel="preload" as="image" fetchpriority="high" href="/!s/!img/cinema/em1.png">
 </head>
 
 <body>
@@ -18,6 +16,7 @@
         <div class="img">
             <div>
                 <p>enter?</p>
+                <button id="bgmbtn">toggle music</button>
             </div>
         </div>
     </div>
@@ -768,7 +767,7 @@
 
 <script src="/!s/mus.js"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script src="script.js"></script>
+<script src="script.js?v=1."></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const enterText = document.querySelector('.opener .img p');

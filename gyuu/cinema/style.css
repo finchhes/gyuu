@@ -84,9 +84,26 @@ a {
     border:solid transparent;
     padding-top:20px;
     text-align: center;
-    margin-left:250px;
+    margin-left:245px;
     height:270px;
-    transform: perspective( 180px ) rotateY( -6deg ) rotatex(1deg);
+    transform: perspective( 180px ) rotateY( -4deg ) rotatex(1deg);
+}
+
+.opener #bgmbtn {
+    position:relative;
+    z-index:10000;
+    top:-120px;
+    border:solid 2px #E2A867;
+    opacity:0;
+    color:#ffefd5;
+    background:#3E7C62;
+    margin:auto;
+    border-radius: 0;
+    filter:drop-shadow(0 1.5px 0 black) drop-shadow(1.5px 0 0 black);
+}
+
+.opener #bgmbtn:hover {
+    transform: scale(1.05);
 }
 
 .img div p {
@@ -101,12 +118,12 @@ a {
     opacity:0;
 }
 
-.img:has(div p:hover) {
+.img:has(div p:hover), .img:has(div #bgmbtn:hover) {
     opacity:1;
 }
 
-.img div p:hover {
-    opacity:1;
+.img div:has(p:hover) *, .img div:has(button:hover) * {
+    opacity:1 !important;
 }
 
 .wrap {

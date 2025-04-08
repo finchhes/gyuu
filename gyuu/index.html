@@ -18,15 +18,17 @@
     <header>
         <div class="buttons">
             <div class="audio-player">
-                <audio id="bg-music" loop src="/!s/!mus/portroyal.mp3" loading="lazy" preload="none"></audio>
-                <button id="bgmbtn"
-                    tt="in queue: port royal curios and curiosities music loop.">toggle bgm</button>
-                <button onclick="toggleAutoplay()"
-                    tt="warning: this will save your choice for future visits until you toggle it again." id="autoplaybtn">toggle
-                    autoplay for all pages</button>
-            </div>
-            <div class="accessibility">
-                <button id="hover" onclick="toggleHover()" tt="as seen in the navigation map and update log.">show content on hover is on</button>
+                <audio id="bg-music" loop src="/!s/!mus/kralendijk.mp3" loading="lazy" preload="none"></audio>
+                <div class="bgmbtn" tt="playing: Kralendijk, Bonaire.">
+                    <button id="bgmbtn">toggle bgm</button>
+                </div>
+                <div class="autoplaybtn" tt="warning: this will save your choice for future visits until you toggle it again.">
+                    <button onclick="toggleAutoplay()" id="autoplaybtn">toggle
+                        autoplay for all pages</button>
+                </div>
+                <div class="hover" tt="as seen in the navigation map and update log.">
+                    <button id="hover"onclick="toggleHover()">show content on hover is on</button>
+                </div>
             </div>
         </div>
         <h1>
@@ -366,6 +368,6 @@
     </svg>
     <div id="tooltip" class="tooltip"></div>
 </body>
-<script src="script.js?v=1.04041020"></script>
+<script src="script.js?v=1.07041632"></script>
 <script src="/!s/mus.js"></script>
 </html>

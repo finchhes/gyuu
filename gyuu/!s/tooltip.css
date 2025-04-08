@@ -4,7 +4,6 @@
 	position: fixed;
     display:none;
 	max-width:240px;
-	min-width: 180px;
 	z-index:100;
 	margin:15px 12px 7px 15px !important;
 	padding:18px;
@@ -21,5 +20,5 @@
     letter-spacing: .8px;
 	-webkit-font-smoothing: antialiased;
 	pointer-events: none;
-	transition: .15s;
+	transition: .12s;
 }

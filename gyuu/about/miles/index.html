@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gyuu.</title>
     <link rel="icon" type="image/x-icon" href="/!s/!img/home/blank.png">
-    <link href="style.css?v=1" rel="stylesheet" type="text/css" media="all">
+    <link href="style.css?v=1.06041028" rel="stylesheet" type="text/css" media="all">
     <script src="/!s/preload.js"></script>
     <link rel="preload" as="image" href="/!s/!img/about/miles/loader.gif">
 </head>
@@ -14,6 +14,7 @@
 <body>
     <!--<div id="preloader"></div>-->
     <audio id="bg-music" loop="" src="/!s/!mus/Galactic Anthem.mp3"></audio>
+    <button id="bgmbtn">toggle music</button>
     <div class="wrap">
         <div class="t tl">
             <div class="tiw">
@@ -209,7 +210,7 @@
                         <br>
                         the UNITED GALACTIC FEDERATION appreciates your<br> cooperation while you wait for this page  to be<br> completed, and apologises in the case of<br> slow loading or any  other errors<br> you may encounter here.<br><br>
                         </p><p>
-                        <a href="/"><h1 style="margin-left:30px;">go back home?</h1></a>
+                        <a href="/about"><h1 style="margin-left:30px;">go back?</h1></a>
                     </p></div>
                     <img src="/!s/!img/about/miles/stitch.png">
                 </div>
@@ -218,9 +219,9 @@
     </div>
 </body>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="/!s/jquery.style-my-tooltips.js"></script>
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 <script src="/!s/mus.js"></script>
+<script>window.onload=()=>{const e=document.getElementById("bgmbtn"),t=document.getElementById("bg-music");e&&t&&(e.textContent=t.paused?"music is off":"music is on",e.addEventListener("click",()=>{t.paused?(t.play(),e.textContent="music is on"):(t.pause(),e.textContent="music is off")}))};</script>
+</script>
 
 </html>

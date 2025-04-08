@@ -50,11 +50,27 @@ body {
     background:#0b0a19cf;
     margin:auto;
     padding:20px;
-    border-radius:20px;
+    border-radius:20px 0 20px 20px;
     image-rendering: initial;
     color:#B6B5F3;
     font-family:plane;
     font-size: 15px;
+    position: relative;
+}
+
+#bgmbtn {
+  position:absolute;
+  cursor: pointer;
+  top:-15px;
+  right:0;
+  background:#0b0a19cf;
+  margin:auto;
+  border:none;
+  border-radius: 10px 10px 0 0;
+  color:#B6B5F3;
+  padding-left:10px;
+  padding-right:10px;
+  height:15px;
 }
 
 .wrap {
@@ -83,6 +99,7 @@ p {
 .t:hover {
     box-shadow: inset #b5d4f383 0 0 24px 2px, 0 0 15px #b7abd8;
     transform: scale(1.05) perspective(1000px);
+    z-index:4;
 }
 
 .t.tl {

@@ -1,5 +1,5 @@
 @import url(/!s/reset.css);
-@import url(/!s/tooltip.css);
+@import url(/!s/tooltip.css?v=2);
 @font-face {
     font-family: tnanti;
     src: url(/!f/fonts/TNanti.woff2);
@@ -31,9 +31,6 @@ body {
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
     margin-top:2px;
     float:right;
     transition:.3s;
@@ -42,7 +39,7 @@ body {
 .buttons button {
     cursor: pointer;
     text-align: right;
-    width: max-content;
+    width: fit-content;
     color:#faf7df;
     font-size:18px;
     font-family:black-beard;
@@ -50,23 +47,37 @@ body {
     border:ridge 2px #5D381E;
     background-image: url(/!s/!img/home/board.png);
     background-position: center;
-    background-size: 120%;
+    background-size: 130%;
     background-blend-mode:soft-light;
     filter:drop-shadow(0 0 2px #3e10059a);
     transition:.3s;
+    width:100%;
+    text-align: center;
+}
+
+.bgmbtn {
+    padding-right:2.5px;
+}
+
+.autoplaybtn {
+    padding-left:2.5px;
+}
+
+.audio-player {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .buttons button:hover {
     filter:drop-shadow(0 0 4px #3e1005e1);
 }
 
-.accessibility {
-    display:flex;
-}
 
-#hover {
-    flex-grow: 2;
-    text-align: center;
+.hover {
+    grid-column: span 2 / span 2;
+    width:100%;
+    padding-top:2.5px;
 }
 
 a {
