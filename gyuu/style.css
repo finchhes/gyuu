@@ -179,28 +179,26 @@ h1 {
 }
 
 main {
-    height: 335px;
+    height: 321px;
     padding: 20px;
     padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
     color: #85582d;
     background-image: url(/!s/!img/home/postcard.png);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     filter: drop-shadow(0px 0px 4px #3e10059a);
-    transform: rotate(1.2deg);
     transition: 0.3s;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    overflow: hidden;
 }
 
 main:hover {
     filter: drop-shadow(0px 0px 6px #3e1005e1);
-    transform: rotate(.2deg);
-    transition: 0.3s;
 }
 
 main .mainscroll {
@@ -211,6 +209,7 @@ main .mainscroll {
     font-family: felt-tip-woman;
     font-weight: bold;
     line-height: .95;
+    scrollbar-width: none;
 }
 
 .mainscroll a {
@@ -252,6 +251,7 @@ main .mainside {
     top: 60px;
     left: 80px;
     cursor: help;
+    width:fit-content;
 }
 
 
@@ -842,6 +842,12 @@ footer a {
     color: #055;
     opacity: .8;
 }
+
+  .tilt-content {
+    transform-style: preserve-3d;
+      position: relative;
+      transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), filter .3s;
+  }
 
 }
 @media screen and (max-width: 626px) {

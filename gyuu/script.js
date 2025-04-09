@@ -21,3 +21,6 @@ new Freezeframe();
 
 //commit 
 fetch('https://api.github.com/repos/finchhes/gyuu/commits?per_page=1').then(res=>res.json()).then(res=>{let sha=res[0].sha,authorDate=new Date(res[0].commit.author.date);document.getElementById('commitLatest').innerText=res[0].commit.message;document.getElementById('dateTime').innerText=authorDate.toLocaleDateString('en-GB',{day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'});});
+
+
+const content=document.querySelector(".tilt-content"),text=document.querySelector(".tilt-text");content.addEventListener("mousemove",e=>{const t=content.getBoundingClientRect(),n=e.clientX-t.left,o=e.clientY-t.top,c=t.width/2,l=t.height/2,r=(o-l)/20,s=-(n-c)/20;content.style.transform=`rotateX(${r}deg) rotateY(${s}deg)`,text.style.transform=`translate(-50%, -50%) translateZ(50px) rotateX(${0.5*r}deg) rotateY(${0.5*s}deg)`}),content.addEventListener("mouseleave",()=>{content.style.transform="rotateX(0deg) rotateY(0deg)",text.style.transform="translate(-50%, -50%) translateZ(50px)"});
