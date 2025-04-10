@@ -24,3 +24,14 @@ fetch('https://api.github.com/repos/finchhes/gyuu/commits?per_page=1').then(res=
 
 
 const content=document.querySelector(".tilt-content"),text=document.querySelector(".tilt-text");content.addEventListener("mouseenter",()=>{content.style.transition="transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), filter 0.3s ease",content.style.transform="rotateX(0deg) rotateY(0deg)"}),content.addEventListener("mousemove",e=>{const t=content.getBoundingClientRect(),n=e.clientX-t.left,o=e.clientY-t.top,c=t.width/2,r=t.height/2,i=(o-r)/20,l=-(n-c)/20;content.style.transform=`rotateX(${i}deg) rotateY(${l}deg)`,text.style.transform=`translate(-50%, -50%) translateZ(50px) rotateX(${0.5*i}deg) rotateY(${0.5*l}deg)`}),content.addEventListener("mouseleave",()=>{content.style.transition="transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), filter 0.3s ease",content.style.transform="rotate(1.2deg)",text.style.transform="translate(-50%, -50%) translateZ(50px)"});
+
+const greeting = document.getElementById("greeting");
+const hour = new Date().getHours();
+
+if (hour < 12) {
+  greeting.textContent = "morning";
+} else if (hour < 18) {
+  greeting.textContent = "afternoon";
+} else {
+  greeting.textContent = "evening";
+}
