@@ -23,31 +23,4 @@ new Freezeframe();
 fetch('https://api.github.com/repos/finchhes/gyuu/commits?per_page=1').then(res=>res.json()).then(res=>{let sha=res[0].sha,authorDate=new Date(res[0].commit.author.date);document.getElementById('commitLatest').innerText=res[0].commit.message;document.getElementById('dateTime').innerText=authorDate.toLocaleDateString('en-GB',{day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'});});
 
 
-const content = document.querySelector('.tilt-content');
-    const text = document.querySelector('.tilt-text');
-
-    content.addEventListener('mouseenter', () => {
-      content.style.transition = 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), filter 0.3s ease';
-      content.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    });
-
-    content.addEventListener('mousemove', (e) => {
-      const rect = content.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-
-      const rotateX = (y - centerY) / 20;
-      const rotateY = -(x - centerX) / 20;
-
-      content.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-      text.style.transform = `translate(-50%, -50%) translateZ(50px) rotateX(${rotateX * 0.5}deg) rotateY(${rotateY * 0.5}deg)`;
-    });
-
-    content.addEventListener('mouseleave', () => {
-      content.style.transition = 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), filter 0.3s ease';
-      content.style.transform = 'rotate(1.2deg)';
-      text.style.transform = 'translate(-50%, -50%) translateZ(50px)';
-    });
+const content=document.querySelector(".tilt-content"),text=document.querySelector(".tilt-text");content.addEventListener("mouseenter",()=>{content.style.transition="transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), filter 0.3s ease",content.style.transform="rotateX(0deg) rotateY(0deg)"}),content.addEventListener("mousemove",e=>{const t=content.getBoundingClientRect(),n=e.clientX-t.left,o=e.clientY-t.top,c=t.width/2,r=t.height/2,i=(o-r)/20,l=-(n-c)/20;content.style.transform=`rotateX(${i}deg) rotateY(${l}deg)`,text.style.transform=`translate(-50%, -50%) translateZ(50px) rotateX(${0.5*i}deg) rotateY(${0.5*l}deg)`}),content.addEventListener("mouseleave",()=>{content.style.transition="transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), filter 0.3s ease",content.style.transform="rotate(1.2deg)",text.style.transform="translate(-50%, -50%) translateZ(50px)"});
