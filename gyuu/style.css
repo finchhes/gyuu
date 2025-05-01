@@ -290,7 +290,7 @@ nav:hover {
 .navtitle {
     position: relative;
     margin-bottom: -28px;
-    top: -30px;  
+    top: -30px;
     font-family: p22-sting;
     left:5px;
     font-size: 32px;
@@ -331,10 +331,10 @@ nav .navbody a {
     top: 48px;
     text-align: right;
     font-family: p22-sting;
-    font-size: 24px; 
+    font-size: 24px;
     color: #055;
     filter: drop-shadow(1px 0 0 #F1F0D3) drop-shadow(-1px 0 0 #F1F0D3) drop-shadow(0 -1px 0 #F1F0D3) drop-shadow(0 1px 0 #F1F0D3) drop-shadow(-1px 0 0 #85582d) drop-shadow(0 1px 0 #85582d) drop-shadow(1px 0 0 #85582d) drop-shadow(0 -1px 0 #85582d) drop-shadow(-1px 1px 0 #451902);
-    transform:rotate(-1.5deg); 
+    transform:rotate(-1.5deg);
 }
 
 .journalwrap {
@@ -640,7 +640,9 @@ svg {
 }
 
 .artifact img {
-    width: 100%;
+    width: 233px;
+    height:122px;
+    object-fit:cover;
     margin-top: 10px;
     transform: rotate(1deg);
     border-radius: 2px;
@@ -988,7 +990,7 @@ footer a {
     }
 
     .poster:hover {
-        background-image: url(/!s/!img/home/tryal2.jpg) !important; 
+        background-image: url(/!s/!img/home/tryal2.jpg) !important;
         background-size: cover;
     }
 
